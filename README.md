@@ -130,7 +130,7 @@
 #### Финальная LAMA модель:
 - **ROC-AUC: 0.997** (лучший результат)
 - **Kaggle Score: 0.98224**
-- Submission файл: `results/baseline/submissions/lama_best_submission.csv`
+- Submission файл: `/lama_best_submission.csv`
 
 **Вывод:** LAMA показал отличные результаты благодаря автоматическому подбору моделей и blending. Использование выборки данных помогло избежать проблем с сериализацией при multiprocessing.
 
@@ -210,7 +210,7 @@
 
 #### Шаг 5.7: Обучение финальной модели на полном train set
 - Обучена финальная модель (XGBoost с оптимизированными параметрами) на полном train set
-- Создан submission файл: `results/submissions/xgboost_final_submission.csv`
+- Создан submission файл: `/xgboost_final_submission.csv`
 - **Kaggle Score: 0.98456** (лучший результат!)
 
 **Соответствие критериям:**
@@ -247,7 +247,7 @@
 **XGBoost Optimized:**
 - **Kaggle Score: 0.98456** 
 - Validation ROC-AUC: 0.996993
-- Submission файл: `results/submissions/xgboost_final_submission.csv`
+- Submission файл: `/xgboost_final_submission.csv`
 
 **Параметры:**
 - n_estimators: 200
@@ -265,7 +265,7 @@
 
 1. **Запуск notebook:**
    ```bash
-   jupyter notebook notebooks/complete_analysis.ipynb
+   jupyter notebook complete_analysis.ipynb
    ```
 
 2. **Требования:**
