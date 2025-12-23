@@ -1,0 +1,1068 @@
+2025-12-23 05:54:44,877 - __main__ - INFO - Загрузка данных из playground-series-s4e8
+2025-12-23 05:54:49,636 - __main__ - INFO - train.csv загружен: (3116945, 22)
+2025-12-23 05:54:52,200 - __main__ - INFO - test.csv загружен: (2077964, 21)
+2025-12-23 05:54:52,422 - __main__ - INFO - sample_submission.csv загружен: (2077964, 2)
+2025-12-23 05:55:05,038 - __main__ - INFO - Метаинформация сохранена в results/eda/01_data_overview.txt
+2025-12-23 05:55:05,108 - __main__ - INFO - Анализ целевой переменной 'class'
+2025-12-23 05:55:05,472 - __main__ - INFO - Найдено классов: 2
+2025-12-23 05:55:05,473 - __main__ - INFO - Распределение: {'p': np.int64(1705396), 'e': np.int64(1411549)}
+2025-12-23 05:55:05,474 - __main__ - INFO - Процентное соотношение: {'p': np.float64(54.71), 'e': np.float64(45.29)}
+2025-12-23 05:55:05,476 - __main__ - INFO - Статистика сохранена в results/eda/02_target_statistics.txt
+2025-12-23 05:55:05,482 - __main__ - INFO - Таблица распределения сохранена в results/eda/02_target_distribution.csv
+2025-12-23 05:55:09,649 - __main__ - INFO - Создание pie chart распределения классов
+2025-12-23 05:55:10,153 - __main__ - INFO - Pie chart сохранен в results/eda/visualizations/target_distribution_pie.png
+2025-12-23 05:55:10,313 - __main__ - INFO - Отчет сохранен в results/eda/02_target_visualization_report.txt
+2025-12-23 05:55:10,416 - __main__ - INFO - Идентификация типов признаков
+2025-12-23 05:55:10,417 - __main__ - INFO - Найдено численных признаков: 3
+2025-12-23 05:55:10,418 - __main__ - INFO - Найдено категориальных признаков: 17
+2025-12-23 05:55:10,419 - __main__ - INFO - Найдено временных признаков: 0
+2025-12-23 05:55:10,420 - __main__ - INFO - Анализ 3 численных признаков
+2025-12-23 05:55:11,093 - __main__ - INFO - Анализ 17 категориальных признаков
+2025-12-23 05:55:19,399 - __main__ - INFO - Частоты категориальных признаков сохранены в results/eda/03_categorical_features_frequencies.csv
+2025-12-23 05:55:19,401 - __main__ - INFO - Типы признаков сохранены в results/eda/03_feature_types.json
+2025-12-23 05:55:19,402 - __main__ - INFO - Статистика численных признаков сохранена в results/eda/03_numeric_features_stats.csv
+2025-12-23 05:55:19,404 - __main__ - INFO - Статистика категориальных признаков сохранена в results/eda/03_categorical_features_stats.csv
+2025-12-23 05:55:19,864 - __main__ - INFO - Визуализация 3 численных признаков
+2025-12-23 05:55:22,877 - __main__ - INFO - Визуализация 17 категориальных признаков
+2025-12-23 05:55:31,997 - __main__ - INFO - Summary report сохранен в results/eda/04_distributions_report.txt
+2025-12-23 05:55:32,141 - __main__ - INFO - Анализ выбросов в 3 численных признаках
+2025-12-23 05:55:32,978 - __main__ - INFO - Отчет о выбросах сохранен в results/eda/05_outliers_report.txt
+2025-12-23 05:55:35,456 - __main__ - INFO - Анализ аномалий в 17 категориальных признаках
+2025-12-23 05:55:38,183 - __main__ - INFO - Отчет о неожиданных категориях сохранен в results/eda/05_unexpected_categories.txt
+2025-12-23 05:55:38,255 - __main__ - INFO - Анализ пропущенных значений
+2025-12-23 05:55:40,841 - __main__ - INFO - Статистика сохранена в results/eda/06_missing_values_stats.csv
+2025-12-23 05:55:40,869 - __main__ - INFO - Создание heatmap пропущенных значений
+2025-12-23 05:55:41,862 - __main__ - INFO - Heatmap сохранен в results/eda/visualizations/missing_values/missing_values_heatmap.png
+2025-12-23 05:55:41,864 - __main__ - INFO - Создание bar plot пропущенных значений
+2025-12-23 05:55:42,485 - __main__ - INFO - Bar plot сохранен в results/eda/visualizations/missing_values/missing_values_barplot.png
+2025-12-23 05:55:42,494 - __main__ - INFO - Анализ паттернов пропусков
+2025-12-23 05:55:43,461 - __main__ - INFO - Анализ паттернов сохранен в results/eda/06_missing_values_analysis.txt
+2025-12-23 05:55:44,160 - __main__ - INFO - Вычисление корреляций для 3 численных признаков
+2025-12-23 05:55:44,324 - __main__ - INFO - Корреляционная матрица сохранена в results/eda/07_correlation_matrix.csv
+2025-12-23 05:55:44,325 - __main__ - INFO - Создание heatmap корреляций
+2025-12-23 05:55:44,740 - __main__ - INFO - Heatmap сохранен в results/eda/visualizations/correlation_heatmap.png
+2025-12-23 05:55:44,749 - __main__ - INFO - Вычисление Cramér's V для 17 категориальных признаков
+2025-12-23 05:56:13,807 - __main__ - INFO - Cramér's V матрица сохранена в results/eda/07_categorical_correlations.csv
+2025-12-23 05:56:13,836 - __main__ - INFO - Вычисление ANOVA F-test для смешанного анализа
+2025-12-23 05:56:14,358 - __main__ - INFO - ANOVA результаты сохранены в results/eda/07_mixed_correlations.csv
+2025-12-23 05:56:14,420 - __main__ - INFO - Отчет сохранен в results/eda/07_correlations_report.txt
+2025-12-23 05:56:15,024 - __main__ - INFO - Вычисление важности 3 численных признаков
+2025-12-23 05:56:15,752 - __main__ - INFO - Вычисление важности 17 категориальных признаков
+2025-12-23 05:56:18,664 - __main__ - INFO - Рейтинг сохранен в results/eda/08_feature_importance_ranking.csv
+2025-12-23 05:56:18,665 - __main__ - INFO - Создание bar plot важности признаков (топ-20)
+2025-12-23 05:56:19,231 - __main__ - INFO - График сохранен в results/eda/visualizations/feature_importance.png
+2025-12-23 05:56:19,380 - __main__ - INFO - Отчет сохранен в results/eda/08_feature_importance_report.txt
+2025-12-23 05:56:19,472 - __main__ - INFO - Анализ асимметрии распределений
+2025-12-23 05:56:19,654 - __main__ - INFO - Анализ кардинальности категориальных признаков
+2025-12-23 05:56:21,664 - __main__ - INFO - Идеи сохранены в results/eda/09_feature_engineering_ideas.txt
+2025-12-23 05:56:23,446 - __main__ - INFO - Пример логарифмирования сохранен для cap-diameter
+2025-12-23 05:56:25,170 - __main__ - INFO - Пример стандартизации сохранен для cap-diameter
+2025-12-23 05:56:25,242 - __main__ - INFO - Разделение данных: train/val = 80%/20%
+2025-12-23 05:56:28,862 - __main__ - INFO - Train split: (2493556, 22)
+2025-12-23 05:56:28,863 - __main__ - INFO - Val split: (623389, 22)
+2025-12-23 05:56:28,969 - __main__ - INFO - Train распределение классов: {'p': np.float64(0.547137100590482), 'e': np.float64(0.45286289940951796)}
+2025-12-23 05:56:28,971 - __main__ - INFO - Val распределение классов: {'p': np.float64(0.5471366995567776), 'e': np.float64(0.4528633004432224)}
+2025-12-23 05:56:38,387 - __main__ - INFO - Train split сохранен в results/baseline/data/train_split.csv
+2025-12-23 05:56:41,058 - __main__ - INFO - Val split сохранен в results/baseline/data/val_split.csv
+2025-12-23 05:56:49,503 - __main__ - INFO - Test сохранен в results/baseline/data/test.csv
+2025-12-23 05:56:49,601 - __main__ - INFO - Информация о split сохранена в results/baseline/01_data_split_info.txt
+2025-12-23 05:56:54,668 - lightautoml.utils.installation - WARNING - 'nlp' extra dependency package 'fasttext-numpy2' isn't installed. Look at README.md in repo 'LightAutoML' for installation instructions.
+2025-12-23 05:56:54,670 - lightautoml.utils.installation - WARNING - 'nlp' extra dependency package 'nltk' isn't installed. Look at README.md in repo 'LightAutoML' for installation instructions.
+2025-12-23 05:57:05,684 - __main__ - INFO - Train split загружен: (2493556, 22)
+2025-12-23 05:57:05,686 - __main__ - INFO - Val split загружен: (623389, 22)
+2025-12-23 05:57:05,688 - __main__ - INFO - Используется выборка: 100000 строк из 2493556
+2025-12-23 05:57:05,885 - __main__ - INFO - Подготовка данных для LAMA
+2025-12-23 05:57:05,886 - __main__ - INFO - Train: (100000, 22)
+2025-12-23 05:57:05,887 - __main__ - INFO - Val: (623389, 22)
+2025-12-23 05:57:05,888 - __main__ - INFO - Обучение LAMA (Config 1): timeout=300s, cpu_limit=1
+2025-12-23 05:57:05,910 - __main__ - INFO - Начало обучения модели...
+2025-12-23 05:57:05,912 - lightautoml.addons.utilization.utilization - INFO - Start automl [1mutilizator[0m with listed constraints:
+2025-12-23 05:57:05,913 - lightautoml.addons.utilization.utilization - INFO - - time: 300.00 seconds
+2025-12-23 05:57:05,915 - lightautoml.addons.utilization.utilization - INFO - - CPU: 1 cores
+2025-12-23 05:57:05,916 - lightautoml.addons.utilization.utilization - INFO - - memory: 16 GB
+
+2025-12-23 05:57:05,917 - lightautoml.addons.utilization.utilization - INFO - [1mIf one preset completes earlier, next preset configuration will be started[0m
+
+2025-12-23 05:57:05,919 - lightautoml.addons.utilization.utilization - INFO - ==================================================
+2025-12-23 05:57:05,921 - lightautoml.addons.utilization.utilization - INFO - Start 0 automl preset configuration:
+2025-12-23 05:57:05,922 - lightautoml.addons.utilization.utilization - INFO - [1mconf_0_sel_type_0.yml[0m, random state: {'reader_params': {'random_state': 42}, 'nn_params': {'random_state': 42}, 'general_params': {'return_all_predictions': False}}
+2025-12-23 05:57:05,936 - lightautoml.automl.presets.base - INFO - Stdout logging level is INFO.
+2025-12-23 05:57:05,941 - lightautoml.automl.presets.base - INFO - Task: binary
+
+2025-12-23 05:57:05,943 - lightautoml.automl.presets.base - INFO - Start automl preset with listed constraints:
+2025-12-23 05:57:05,944 - lightautoml.automl.presets.base - INFO - - time: 300.00 seconds
+2025-12-23 05:57:05,945 - lightautoml.automl.presets.base - INFO - - CPU: 1 cores
+2025-12-23 05:57:05,947 - lightautoml.automl.presets.base - INFO - - memory: 16 GB
+
+2025-12-23 05:57:05,949 - lightautoml.reader.base - INFO - [1mTrain data shape: (100000, 22)[0m
+
+2025-12-23 05:57:07,851 - lightautoml.reader.base - INFO3 - Feats was rejected during automatic roles guess: []
+2025-12-23 05:57:07,879 - lightautoml.automl.base - INFO - Layer [1m1[0m train process start. Time left 298.07 secs
+2025-12-23 05:57:10,315 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m ...
+2025-12-23 05:57:10,317 - lightautoml.ml_algo.base - DEBUG - Training params: {'tol': 1e-06, 'max_iter': 100, 'cs': [1e-05, 5e-05, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100, 500, 1000, 5000, 10000, 50000, 100000], 'early_stopping': 2, 'categorical_idx': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 'embed_sizes': array([13,  8, 14,  9, 13,  5,  9, 10,  5,  9, 14, 10,  8,  3],
+      dtype=int32), 'data_size': 33}
+2025-12-23 05:57:10,325 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m =====
+2025-12-23 05:57:10,782 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1e-05 score = 0.7751682719302802
+2025-12-23 05:57:11,158 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5e-05 score = 0.8301784767526604
+2025-12-23 05:57:11,631 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0001 score = 0.8539516686182917
+2025-12-23 05:57:12,202 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0005 score = 0.8970909366109822
+2025-12-23 05:57:12,677 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.001 score = 0.9096668987714466
+2025-12-23 05:57:13,331 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.005 score = 0.928916841804492
+2025-12-23 05:57:13,850 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.01 score = 0.9339586896668302
+2025-12-23 05:57:14,878 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.05 score = 0.9409087237057708
+2025-12-23 05:57:14,898 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.1 score = 0.9409087237057708
+2025-12-23 05:57:16,249 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.5 score = 0.9441498831546928
+2025-12-23 05:57:16,268 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1 score = 0.9441498831546928
+2025-12-23 05:57:16,291 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5 score = 0.9441498831546928
+2025-12-23 05:57:16,304 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 1[0m for [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m =====
+2025-12-23 05:57:16,658 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1e-05 score = 0.7751870557924286
+2025-12-23 05:57:17,038 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5e-05 score = 0.8304618739854244
+2025-12-23 05:57:17,508 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0001 score = 0.8542396508485564
+2025-12-23 05:57:18,119 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0005 score = 0.896843099589858
+2025-12-23 05:57:18,606 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.001 score = 0.9092240102064769
+2025-12-23 05:57:19,208 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.005 score = 0.9279501841080778
+2025-12-23 05:57:19,923 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.01 score = 0.9325875383460137
+2025-12-23 05:57:20,917 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.05 score = 0.9386917437480911
+2025-12-23 05:57:20,934 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.1 score = 0.9386917437480911
+2025-12-23 05:57:22,074 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.5 score = 0.9415473447548093
+2025-12-23 05:57:22,097 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1 score = 0.9415473447548093
+2025-12-23 05:57:22,126 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5 score = 0.9415473447548093
+2025-12-23 05:57:22,143 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 2[0m for [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m =====
+2025-12-23 05:57:22,502 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1e-05 score = 0.784703028955273
+2025-12-23 05:57:22,913 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5e-05 score = 0.8404974953303641
+2025-12-23 05:57:23,378 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0001 score = 0.8633342077614596
+2025-12-23 05:57:23,950 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0005 score = 0.9041763869622484
+2025-12-23 05:57:24,425 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.001 score = 0.916024565256489
+2025-12-23 05:57:25,080 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.005 score = 0.9338031326559116
+2025-12-23 05:57:25,685 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.01 score = 0.938283724366535
+2025-12-23 05:57:26,820 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.05 score = 0.9441940433891479
+2025-12-23 05:57:26,846 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.1 score = 0.9441940433891479
+2025-12-23 05:57:28,322 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.5 score = 0.9471241543882551
+2025-12-23 05:57:28,342 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1 score = 0.9471241543882551
+2025-12-23 05:57:28,361 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5 score = 0.9471241543882551
+2025-12-23 05:57:28,366 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 2
+
+2025-12-23 05:57:28,379 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m finished. score = [1m0.9442300194507016[0m
+2025-12-23 05:57:28,381 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m fitting and predicting completed
+2025-12-23 05:57:28,382 - lightautoml.automl.base - INFO - Time left 277.56 secs
+
+2025-12-23 05:57:31,807 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m ...
+2025-12-23 05:57:31,809 - lightautoml.ml_algo.base - DEBUG - Training params: {'task': 'train', 'learning_rate': 0.03, 'num_leaves': 64, 'feature_fraction': 0.7, 'bagging_fraction': 0.7, 'bagging_freq': 1, 'max_depth': -1, 'verbosity': -1, 'reg_alpha': 1, 'reg_lambda': 0.0, 'min_split_gain': 0.0, 'zero_as_missing': False, 'num_threads': 1, 'max_bin': 255, 'min_data_in_bin': 3, 'num_trees': 1200, 'early_stopping_rounds': 200, 'random_state': 42, 'verbose_eval': 100}
+2025-12-23 05:57:31,816 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m =====
+2025-12-23 05:57:32,148 - lightautoml.ml_algo.boost_lgbm - INFO3 - Training until validation scores don't improve for 200 rounds
+2025-12-23 05:57:33,620 - lightautoml.ml_algo.boost_lgbm - INFO3 - [100]	valid's auc: 0.991614
+2025-12-23 05:57:35,199 - lightautoml.ml_algo.boost_lgbm - INFO3 - [200]	valid's auc: 0.995989
+2025-12-23 05:57:36,722 - lightautoml.ml_algo.boost_lgbm - INFO3 - [300]	valid's auc: 0.996344
+2025-12-23 05:57:38,106 - lightautoml.ml_algo.boost_lgbm - INFO3 - [400]	valid's auc: 0.99639
+2025-12-23 05:57:39,506 - lightautoml.ml_algo.boost_lgbm - INFO3 - [500]	valid's auc: 0.996353
+2025-12-23 05:57:40,193 - lightautoml.ml_algo.boost_lgbm - INFO3 - Early stopping, best iteration is:
+[350]	valid's auc: 0.996417
+2025-12-23 05:57:40,996 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 1[0m for [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m =====
+2025-12-23 05:57:41,302 - lightautoml.ml_algo.boost_lgbm - INFO3 - Training until validation scores don't improve for 200 rounds
+2025-12-23 05:57:42,797 - lightautoml.ml_algo.boost_lgbm - INFO3 - [100]	valid's auc: 0.990532
+2025-12-23 05:57:44,440 - lightautoml.ml_algo.boost_lgbm - INFO3 - [200]	valid's auc: 0.994093
+2025-12-23 05:57:45,912 - lightautoml.ml_algo.boost_lgbm - INFO3 - [300]	valid's auc: 0.994735
+2025-12-23 05:57:47,358 - lightautoml.ml_algo.boost_lgbm - INFO3 - [400]	valid's auc: 0.994871
+2025-12-23 05:57:48,794 - lightautoml.ml_algo.boost_lgbm - INFO3 - [500]	valid's auc: 0.994993
+2025-12-23 05:57:50,241 - lightautoml.ml_algo.boost_lgbm - INFO3 - [600]	valid's auc: 0.995012
+2025-12-23 05:57:51,703 - lightautoml.ml_algo.boost_lgbm - INFO3 - [700]	valid's auc: 0.995028
+2025-12-23 05:57:53,074 - lightautoml.ml_algo.boost_lgbm - INFO3 - [800]	valid's auc: 0.995036
+2025-12-23 05:57:54,472 - lightautoml.ml_algo.boost_lgbm - INFO3 - [900]	valid's auc: 0.995029
+2025-12-23 05:57:55,905 - lightautoml.ml_algo.boost_lgbm - INFO3 - [1000]	valid's auc: 0.995015
+2025-12-23 05:57:56,093 - lightautoml.ml_algo.boost_lgbm - INFO3 - Early stopping, best iteration is:
+[811]	valid's auc: 0.995046
+2025-12-23 05:57:58,112 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 1
+
+2025-12-23 05:57:58,123 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m finished. score = [1m0.9954683440776623[0m
+2025-12-23 05:57:58,125 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m fitting and predicting completed
+2025-12-23 05:57:58,127 - lightautoml.ml_algo.tuning.optuna - INFO - Start hyperparameters optimization for [1mLvl_0_Pipe_1_Mod_1_Tuned_LightGBM[0m ... Time budget is 1.00 secs
+2025-12-23 05:57:58,128 - lightautoml.utils.timer - WARNING - Copying TaskTimer may affect the parent PipelineTimer, so copy will create new unlimited TaskTimer
+2025-12-23 05:57:58,140 - optuna.storages._in_memory - INFO - A new study created in memory with name: no-name-3b7f8dfb-9ed3-4c50-96fe-12ca49deaeec
+2025-12-23 05:57:58,467 - lightautoml.ml_algo.boost_lgbm - INFO3 - Training until validation scores don't improve for 200 rounds
+2025-12-23 05:58:00,968 - lightautoml.ml_algo.boost_lgbm - INFO3 - [100]	valid's auc: 0.995608
+2025-12-23 05:58:02,478 - lightautoml.ml_algo.boost_lgbm - INFO3 - [200]	valid's auc: 0.996596
+2025-12-23 05:58:04,920 - lightautoml.ml_algo.boost_lgbm - INFO3 - [300]	valid's auc: 0.996592
+2025-12-23 05:58:07,354 - lightautoml.ml_algo.boost_lgbm - INFO3 - [400]	valid's auc: 0.996577
+2025-12-23 05:58:09,121 - lightautoml.ml_algo.boost_lgbm - INFO3 - Early stopping, best iteration is:
+[274]	valid's auc: 0.996602
+2025-12-23 05:58:10,105 - optuna.study.study - INFO - Trial 0 finished with value: 0.9966016845916361 and parameters: {'feature_fraction': 0.6872700594236812, 'num_leaves': 244, 'bagging_fraction': 0.8659969709057025, 'min_sum_hessian_in_leaf': 0.24810409748678125, 'reg_alpha': 2.5361081166471375e-07, 'reg_lambda': 2.5348407664333426e-07}. Best is trial 0 with value: 0.9966016845916361.
+2025-12-23 05:58:10,114 - lightautoml.ml_algo.tuning.optuna - INFO3 - [1mTrial 1[0m with hyperparameters {'feature_fraction': 0.6872700594236812, 'num_leaves': 244, 'bagging_fraction': 0.8659969709057025, 'min_sum_hessian_in_leaf': 0.24810409748678125, 'reg_alpha': 2.5361081166471375e-07, 'reg_lambda': 2.5348407664333426e-07} scored 0.9966016845916361 in 0:00:11.964385
+2025-12-23 05:58:10,119 - lightautoml.ml_algo.tuning.optuna - INFO - Hyperparameters optimization for [1mLvl_0_Pipe_1_Mod_1_Tuned_LightGBM[0m completed
+2025-12-23 05:58:10,121 - lightautoml.ml_algo.tuning.optuna - INFO2 - The set of hyperparameters [1m{'feature_fraction': 0.6872700594236812, 'num_leaves': 244, 'bagging_fraction': 0.8659969709057025, 'min_sum_hessian_in_leaf': 0.24810409748678125, 'reg_alpha': 2.5361081166471375e-07, 'reg_lambda': 2.5348407664333426e-07}[0m
+ achieve 0.9966 auc
+2025-12-23 05:58:10,134 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m ...
+2025-12-23 05:58:10,135 - lightautoml.ml_algo.base - DEBUG - Training params: {'task_type': 'CPU', 'thread_count': 1, 'random_seed': 42, 'num_trees': 1500, 'learning_rate': 0.045, 'l2_leaf_reg': 0.01, 'bootstrap_type': 'Bernoulli', 'grow_policy': 'SymmetricTree', 'max_depth': 5, 'min_data_in_leaf': 1, 'one_hot_max_size': 10, 'fold_permutation_block': 1, 'boosting_type': 'Plain', 'boost_from_average': True, 'od_type': 'Iter', 'od_wait': 100, 'max_bin': 32, 'feature_border_type': 'GreedyLogSum', 'nan_mode': 'Min', 'verbose': 100, 'allow_writing_files': False, 'verbose_eval': 100}
+2025-12-23 05:58:10,144 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m =====
+2025-12-23 05:58:10,357 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8342909	best: 0.8342909 (0)	total: 67ms	remaining: 1m 40s
+2025-12-23 05:58:11,840 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9812245	best: 0.9812245 (100)	total: 1.48s	remaining: 20.6s
+2025-12-23 05:58:13,330 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9914408	best: 0.9914408 (200)	total: 2.89s	remaining: 18.7s
+2025-12-23 05:58:14,851 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9944083	best: 0.9944083 (300)	total: 4.32s	remaining: 17.2s
+2025-12-23 05:58:16,380 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9952982	best: 0.9952982 (400)	total: 5.76s	remaining: 15.8s
+2025-12-23 05:58:17,839 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9955776	best: 0.9955783 (490)	total: 7.21s	remaining: 14.4s
+2025-12-23 05:58:19,265 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9956873	best: 0.9956873 (600)	total: 8.64s	remaining: 12.9s
+2025-12-23 05:58:20,759 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9957603	best: 0.9957639 (657)	total: 10.1s	remaining: 11.5s
+2025-12-23 05:58:22,188 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9958526	best: 0.9958528 (799)	total: 11.5s	remaining: 10s
+2025-12-23 05:58:23,635 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9958853	best: 0.9958912 (864)	total: 12.9s	remaining: 8.57s
+2025-12-23 05:58:25,072 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9959196	best: 0.9959254 (991)	total: 14.3s	remaining: 7.15s
+2025-12-23 05:58:26,295 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 05:58:26,296 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9959253748
+2025-12-23 05:58:26,297 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 991
+2025-12-23 05:58:26,298 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 992 iterations.
+2025-12-23 05:58:26,352 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 1[0m for [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m =====
+2025-12-23 05:58:26,480 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8408125	best: 0.8408125 (0)	total: 12.6ms	remaining: 18.9s
+2025-12-23 05:58:27,911 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9794951	best: 0.9794951 (100)	total: 1.44s	remaining: 19.9s
+2025-12-23 05:58:29,365 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9908872	best: 0.9908872 (200)	total: 2.87s	remaining: 18.5s
+2025-12-23 05:58:30,806 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9930885	best: 0.9930885 (300)	total: 4.29s	remaining: 17.1s
+2025-12-23 05:58:32,217 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9937777	best: 0.9937777 (400)	total: 5.68s	remaining: 15.6s
+2025-12-23 05:58:33,619 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9940524	best: 0.9940524 (500)	total: 7.09s	remaining: 14.1s
+2025-12-23 05:58:33,902 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9941690	best: 0.9941731 (597)	total: 8.53s	remaining: 12.8s
+2025-12-23 05:58:35,287 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9941827	best: 0.9942014 (611)	total: 9.92s	remaining: 11.3s
+2025-12-23 05:58:35,465 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 05:58:35,467 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9942013955
+2025-12-23 05:58:35,467 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 611
+2025-12-23 05:58:35,468 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 612 iterations.
+2025-12-23 05:58:35,493 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 2[0m for [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m =====
+2025-12-23 05:58:35,621 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8437546	best: 0.8437546 (0)	total: 13.4ms	remaining: 20.1s
+2025-12-23 05:58:37,080 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9819320	best: 0.9819320 (100)	total: 1.43s	remaining: 19.9s
+2025-12-23 05:58:38,497 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9923072	best: 0.9923072 (200)	total: 2.81s	remaining: 18.2s
+2025-12-23 05:58:39,926 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9945226	best: 0.9945226 (300)	total: 4.21s	remaining: 16.8s
+2025-12-23 05:58:41,336 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9952202	best: 0.9952202 (400)	total: 5.62s	remaining: 15.4s
+2025-12-23 05:58:42,735 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9955027	best: 0.9955027 (500)	total: 7.04s	remaining: 14s
+2025-12-23 05:58:44,190 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9956413	best: 0.9956413 (600)	total: 8.44s	remaining: 12.6s
+2025-12-23 05:58:45,633 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9957421	best: 0.9957421 (700)	total: 9.81s	remaining: 11.2s
+2025-12-23 05:58:47,098 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9957870	best: 0.9958006 (760)	total: 11.2s	remaining: 9.78s
+2025-12-23 05:58:48,489 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9958495	best: 0.9958495 (900)	total: 12.6s	remaining: 8.39s
+2025-12-23 05:58:49,820 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9958902	best: 0.9958929 (998)	total: 14s	remaining: 6.96s
+2025-12-23 05:58:51,188 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9959205	best: 0.9959349 (1074)	total: 15.4s	remaining: 5.57s
+2025-12-23 05:58:52,660 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9959599	best: 0.9959632 (1190)	total: 16.8s	remaining: 4.17s
+2025-12-23 05:58:54,157 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9959745	best: 0.9959807 (1249)	total: 18.2s	remaining: 2.78s
+2025-12-23 05:58:55,622 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9960269	best: 0.9960269 (1400)	total: 19.6s	remaining: 1.39s
+2025-12-23 05:58:57,012 - lightautoml.ml_algo.boost_cb - INFO3 - 1499:	test: 0.9960424	best: 0.9960449 (1496)	total: 21s	remaining: 0us
+2025-12-23 05:58:57,013 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9960449479
+2025-12-23 05:58:57,014 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1496
+2025-12-23 05:58:57,014 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1497 iterations.
+2025-12-23 05:58:57,062 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 3[0m for [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m =====
+2025-12-23 05:58:57,185 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8452319	best: 0.8452319 (0)	total: 16.7ms	remaining: 25s
+2025-12-23 05:58:58,566 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9802566	best: 0.9802566 (100)	total: 1.42s	remaining: 19.7s
+2025-12-23 05:58:59,983 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9920594	best: 0.9920594 (200)	total: 2.82s	remaining: 18.3s
+2025-12-23 05:59:01,469 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9947690	best: 0.9947690 (300)	total: 4.26s	remaining: 17s
+2025-12-23 05:59:02,946 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9955163	best: 0.9955163 (400)	total: 5.69s	remaining: 15.6s
+2025-12-23 05:59:04,342 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9957944	best: 0.9957960 (499)	total: 7.07s	remaining: 14.1s
+2025-12-23 05:59:04,808 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9960015	best: 0.9960015 (600)	total: 8.54s	remaining: 12.8s
+2025-12-23 05:59:06,189 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9960659	best: 0.9960684 (691)	total: 9.95s	remaining: 11.3s
+2025-12-23 05:59:07,569 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9961148	best: 0.9961148 (800)	total: 11.3s	remaining: 9.89s
+2025-12-23 05:59:09,003 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9961625	best: 0.9961659 (890)	total: 12.7s	remaining: 8.46s
+2025-12-23 05:59:10,442 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9961931	best: 0.9961964 (993)	total: 14.1s	remaining: 7.04s
+2025-12-23 05:59:11,907 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9962083	best: 0.9962115 (1052)	total: 15.5s	remaining: 5.63s
+2025-12-23 05:59:13,293 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9962282	best: 0.9962333 (1178)	total: 16.9s	remaining: 4.21s
+2025-12-23 05:59:14,701 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9962428	best: 0.9962490 (1296)	total: 18.4s	remaining: 2.81s
+2025-12-23 05:59:16,136 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9962569	best: 0.9962573 (1397)	total: 19.8s	remaining: 1.4s
+2025-12-23 05:59:17,565 - lightautoml.ml_algo.boost_cb - INFO3 - 1499:	test: 0.9962492	best: 0.9962681 (1459)	total: 21.1s	remaining: 0us
+2025-12-23 05:59:17,567 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9962681248
+2025-12-23 05:59:17,567 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1459
+2025-12-23 05:59:17,568 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1460 iterations.
+2025-12-23 05:59:17,611 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 3
+
+2025-12-23 05:59:17,630 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m finished. score = [1m0.995668433002907[0m
+2025-12-23 05:59:17,631 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m fitting and predicting completed
+2025-12-23 05:59:17,633 - lightautoml.ml_algo.tuning.optuna - INFO - Start hyperparameters optimization for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m ... Time budget is 1.00 secs
+2025-12-23 05:59:17,646 - optuna.storages._in_memory - INFO - A new study created in memory with name: no-name-8512d0a9-065f-4be9-b33a-29026c19988e
+2025-12-23 05:59:17,823 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8160565	best: 0.8160565 (0)	total: 15.9ms	remaining: 23.8s
+2025-12-23 05:59:19,236 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9679084	best: 0.9679084 (100)	total: 1.36s	remaining: 18.8s
+2025-12-23 05:59:20,514 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9846176	best: 0.9846176 (200)	total: 2.66s	remaining: 17.2s
+2025-12-23 05:59:21,737 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9908882	best: 0.9908882 (300)	total: 3.9s	remaining: 15.5s
+2025-12-23 05:59:23,017 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9935117	best: 0.9935117 (400)	total: 5.21s	remaining: 14.3s
+2025-12-23 05:59:24,275 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9945431	best: 0.9945431 (500)	total: 6.43s	remaining: 12.8s
+2025-12-23 05:59:25,639 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9950554	best: 0.9950554 (600)	total: 7.73s	remaining: 11.6s
+2025-12-23 05:59:26,956 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9953126	best: 0.9953126 (700)	total: 8.98s	remaining: 10.2s
+2025-12-23 05:59:28,281 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9954617	best: 0.9954617 (800)	total: 10.3s	remaining: 8.99s
+2025-12-23 05:59:29,557 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9955578	best: 0.9955578 (900)	total: 11.6s	remaining: 7.71s
+2025-12-23 05:59:30,853 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9956399	best: 0.9956480 (997)	total: 12.9s	remaining: 6.44s
+2025-12-23 05:59:32,149 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9957034	best: 0.9957034 (1100)	total: 14.2s	remaining: 5.15s
+2025-12-23 05:59:33,485 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9957390	best: 0.9957406 (1194)	total: 15.5s	remaining: 3.86s
+2025-12-23 05:59:34,823 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9957759	best: 0.9957759 (1300)	total: 16.8s	remaining: 2.57s
+2025-12-23 05:59:36,126 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9958194	best: 0.9958194 (1400)	total: 18.1s	remaining: 1.28s
+2025-12-23 05:59:36,409 - lightautoml.ml_algo.boost_cb - INFO3 - 1499:	test: 0.9958456	best: 0.9958502 (1490)	total: 19.4s	remaining: 0us
+2025-12-23 05:59:36,410 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9958502393
+2025-12-23 05:59:36,411 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1490
+2025-12-23 05:59:36,412 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1491 iterations.
+2025-12-23 05:59:36,456 - optuna.study.study - INFO - Trial 0 finished with value: 0.9958502393136671 and parameters: {'max_depth': 4, 'nan_mode': 'Max', 'l2_leaf_reg': 0.0024430162614261413, 'min_data_in_leaf': 4}. Best is trial 0 with value: 0.9958502393136671.
+2025-12-23 05:59:36,460 - lightautoml.ml_algo.tuning.optuna - INFO3 - [1mTrial 1[0m with hyperparameters {'max_depth': 4, 'nan_mode': 'Max', 'l2_leaf_reg': 0.0024430162614261413, 'min_data_in_leaf': 4} scored 0.9958502393136671 in 0:00:18.809196
+2025-12-23 05:59:36,467 - lightautoml.ml_algo.tuning.optuna - INFO - Hyperparameters optimization for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m completed
+2025-12-23 05:59:36,468 - lightautoml.ml_algo.tuning.optuna - INFO2 - The set of hyperparameters [1m{'max_depth': 4, 'nan_mode': 'Max', 'l2_leaf_reg': 0.0024430162614261413, 'min_data_in_leaf': 4}[0m
+ achieve 0.9959 auc
+2025-12-23 05:59:36,469 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m ...
+2025-12-23 05:59:36,470 - lightautoml.ml_algo.base - DEBUG - Training params: {'task_type': 'CPU', 'thread_count': 1, 'random_seed': 42, 'num_trees': 3000, 'learning_rate': 0.03, 'l2_leaf_reg': 0.0024430162614261413, 'bootstrap_type': 'Bernoulli', 'grow_policy': 'SymmetricTree', 'max_depth': 4, 'min_data_in_leaf': 4, 'one_hot_max_size': 10, 'fold_permutation_block': 1, 'boosting_type': 'Plain', 'boost_from_average': True, 'od_type': 'Iter', 'od_wait': 100, 'max_bin': 32, 'feature_border_type': 'GreedyLogSum', 'nan_mode': 'Max', 'verbose': 100, 'allow_writing_files': False, 'verbose_eval': 100}
+2025-12-23 05:59:36,479 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 05:59:36,601 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8160565	best: 0.8160565 (0)	total: 12.5ms	remaining: 37.5s
+2025-12-23 05:59:37,845 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9510283	best: 0.9510283 (100)	total: 1.28s	remaining: 36.7s
+2025-12-23 05:59:39,103 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9759718	best: 0.9759718 (200)	total: 2.56s	remaining: 35.7s
+2025-12-23 05:59:40,458 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9849575	best: 0.9849575 (300)	total: 3.87s	remaining: 34.7s
+2025-12-23 05:59:41,799 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9893967	best: 0.9893967 (400)	total: 5.13s	remaining: 33.2s
+2025-12-23 05:59:43,163 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9920443	best: 0.9920443 (500)	total: 6.41s	remaining: 32s
+2025-12-23 05:59:44,476 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9934913	best: 0.9934913 (600)	total: 7.71s	remaining: 30.8s
+2025-12-23 05:59:45,794 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9943060	best: 0.9943060 (700)	total: 9.05s	remaining: 29.7s
+2025-12-23 05:59:47,046 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9947740	best: 0.9947740 (800)	total: 10.3s	remaining: 28.4s
+2025-12-23 05:59:48,482 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9950678	best: 0.9950678 (900)	total: 11.7s	remaining: 27.3s
+2025-12-23 05:59:49,904 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9952630	best: 0.9952630 (1000)	total: 13.1s	remaining: 26.1s
+2025-12-23 05:59:51,271 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9954045	best: 0.9954045 (1100)	total: 14.3s	remaining: 24.7s
+2025-12-23 05:59:52,551 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9954754	best: 0.9954754 (1200)	total: 15.6s	remaining: 23.4s
+2025-12-23 05:59:53,834 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9955431	best: 0.9955431 (1300)	total: 17s	remaining: 22.1s
+2025-12-23 05:59:55,054 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9956083	best: 0.9956083 (1400)	total: 18.2s	remaining: 20.8s
+2025-12-23 05:59:56,361 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9956576	best: 0.9956579 (1499)	total: 19.5s	remaining: 19.5s
+2025-12-23 05:59:57,701 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9956879	best: 0.9956884 (1598)	total: 20.8s	remaining: 18.1s
+2025-12-23 05:59:58,991 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9957238	best: 0.9957239 (1698)	total: 22s	remaining: 16.8s
+2025-12-23 06:00:00,300 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9957352	best: 0.9957356 (1778)	total: 23.3s	remaining: 15.5s
+2025-12-23 06:00:01,539 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9957672	best: 0.9957674 (1897)	total: 24.5s	remaining: 14.2s
+2025-12-23 06:00:02,788 - lightautoml.ml_algo.boost_cb - INFO3 - 2000:	test: 0.9957998	best: 0.9958001 (1998)	total: 25.8s	remaining: 12.9s
+2025-12-23 06:00:04,038 - lightautoml.ml_algo.boost_cb - INFO3 - 2100:	test: 0.9958110	best: 0.9958110 (2100)	total: 27.1s	remaining: 11.6s
+2025-12-23 06:00:05,371 - lightautoml.ml_algo.boost_cb - INFO3 - 2200:	test: 0.9958249	best: 0.9958309 (2192)	total: 28.4s	remaining: 10.3s
+2025-12-23 06:00:06,563 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:00:06,564 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.995830941
+2025-12-23 06:00:06,565 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 2192
+2025-12-23 06:00:06,566 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 2193 iterations.
+2025-12-23 06:00:06,640 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 1[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:00:06,769 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8227618	best: 0.8227618 (0)	total: 14ms	remaining: 41.9s
+2025-12-23 06:00:07,068 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9543345	best: 0.9543345 (100)	total: 1.31s	remaining: 37.7s
+2025-12-23 06:00:08,369 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9764311	best: 0.9764311 (200)	total: 2.59s	remaining: 36.1s
+2025-12-23 06:00:09,614 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9843914	best: 0.9844085 (299)	total: 3.86s	remaining: 34.6s
+2025-12-23 06:00:10,884 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9885181	best: 0.9885181 (400)	total: 5.15s	remaining: 33.4s
+2025-12-23 06:00:12,165 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9906452	best: 0.9906510 (499)	total: 6.42s	remaining: 32s
+2025-12-23 06:00:13,495 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9917939	best: 0.9917939 (600)	total: 7.67s	remaining: 30.6s
+2025-12-23 06:00:14,883 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9924202	best: 0.9924202 (700)	total: 8.98s	remaining: 29.5s
+2025-12-23 06:00:16,218 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9929398	best: 0.9929398 (800)	total: 10.3s	remaining: 28.1s
+2025-12-23 06:00:17,496 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9932100	best: 0.9932100 (900)	total: 11.6s	remaining: 26.9s
+2025-12-23 06:00:18,748 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9934438	best: 0.9934438 (1000)	total: 12.8s	remaining: 25.6s
+2025-12-23 06:00:20,021 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9935897	best: 0.9935899 (1098)	total: 14.1s	remaining: 24.3s
+2025-12-23 06:00:21,386 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9936971	best: 0.9937099 (1176)	total: 15.4s	remaining: 23.1s
+2025-12-23 06:00:22,790 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9937846	best: 0.9937847 (1299)	total: 16.7s	remaining: 21.8s
+2025-12-23 06:00:24,095 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9938644	best: 0.9938710 (1386)	total: 18s	remaining: 20.5s
+2025-12-23 06:00:25,360 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9939222	best: 0.9939222 (1500)	total: 19.3s	remaining: 19.2s
+2025-12-23 06:00:26,614 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9939795	best: 0.9939795 (1600)	total: 20.6s	remaining: 18s
+2025-12-23 06:00:27,897 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9939553	best: 0.9940219 (1680)	total: 21.9s	remaining: 16.7s
+2025-12-23 06:00:28,939 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:00:28,941 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9940219451
+2025-12-23 06:00:28,942 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1680
+2025-12-23 06:00:28,942 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1681 iterations.
+2025-12-23 06:00:28,991 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 2[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:00:29,117 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8247240	best: 0.8247240 (0)	total: 12.3ms	remaining: 36.8s
+2025-12-23 06:00:30,483 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9562018	best: 0.9562018 (100)	total: 1.31s	remaining: 37.6s
+2025-12-23 06:00:31,797 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9791809	best: 0.9791809 (200)	total: 2.58s	remaining: 36s
+2025-12-23 06:00:33,073 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9868514	best: 0.9868514 (300)	total: 3.88s	remaining: 34.8s
+2025-12-23 06:00:34,316 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9904591	best: 0.9904591 (400)	total: 5.15s	remaining: 33.4s
+2025-12-23 06:00:35,588 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9925695	best: 0.9925695 (500)	total: 6.44s	remaining: 32.1s
+2025-12-23 06:00:36,919 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9936310	best: 0.9936310 (600)	total: 7.75s	remaining: 30.9s
+2025-12-23 06:00:38,250 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9942484	best: 0.9942484 (700)	total: 9.04s	remaining: 29.7s
+2025-12-23 06:00:38,488 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9946533	best: 0.9946533 (800)	total: 10.3s	remaining: 28.3s
+2025-12-23 06:00:39,789 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9949787	best: 0.9949787 (900)	total: 11.6s	remaining: 27s
+2025-12-23 06:00:41,059 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9951473	best: 0.9951516 (986)	total: 12.9s	remaining: 25.7s
+2025-12-23 06:00:42,317 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9953108	best: 0.9953108 (1100)	total: 14.1s	remaining: 24.4s
+2025-12-23 06:00:43,570 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9954398	best: 0.9954417 (1198)	total: 15.4s	remaining: 23.1s
+2025-12-23 06:00:44,888 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9955234	best: 0.9955234 (1300)	total: 16.7s	remaining: 21.8s
+2025-12-23 06:00:46,252 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9955971	best: 0.9955971 (1400)	total: 17.9s	remaining: 20.5s
+2025-12-23 06:00:47,604 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9956317	best: 0.9956317 (1500)	total: 19.2s	remaining: 19.2s
+2025-12-23 06:00:48,963 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9957369	best: 0.9957369 (1600)	total: 20.4s	remaining: 17.9s
+2025-12-23 06:00:50,241 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9958079	best: 0.9958079 (1700)	total: 21.7s	remaining: 16.6s
+2025-12-23 06:00:51,563 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9958429	best: 0.9958470 (1792)	total: 23s	remaining: 15.3s
+2025-12-23 06:00:52,869 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9958198	best: 0.9958531 (1855)	total: 24.3s	remaining: 14s
+2025-12-23 06:00:53,556 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:00:53,557 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9958530539
+2025-12-23 06:00:53,557 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1855
+2025-12-23 06:00:53,558 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1856 iterations.
+2025-12-23 06:00:53,607 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 3[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:00:53,736 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8235235	best: 0.8235235 (0)	total: 14.3ms	remaining: 42.9s
+2025-12-23 06:00:55,029 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9541033	best: 0.9541033 (100)	total: 1.29s	remaining: 37s
+2025-12-23 06:00:56,336 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9767504	best: 0.9767504 (200)	total: 2.58s	remaining: 35.9s
+2025-12-23 06:00:57,704 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9857330	best: 0.9857330 (300)	total: 3.92s	remaining: 35.2s
+2025-12-23 06:00:59,020 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9900971	best: 0.9900971 (400)	total: 5.22s	remaining: 33.8s
+2025-12-23 06:01:00,384 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9923502	best: 0.9923502 (500)	total: 6.56s	remaining: 32.7s
+2025-12-23 06:01:01,775 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9937047	best: 0.9937047 (600)	total: 7.93s	remaining: 31.7s
+2025-12-23 06:01:03,118 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9945494	best: 0.9945494 (700)	total: 9.26s	remaining: 30.4s
+2025-12-23 06:01:04,412 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9949906	best: 0.9949906 (800)	total: 10.5s	remaining: 28.9s
+2025-12-23 06:01:05,734 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9952855	best: 0.9952855 (900)	total: 11.8s	remaining: 27.6s
+2025-12-23 06:01:07,061 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9955204	best: 0.9955204 (1000)	total: 13.1s	remaining: 26.3s
+2025-12-23 06:01:08,367 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9956632	best: 0.9956632 (1100)	total: 14.4s	remaining: 24.9s
+2025-12-23 06:01:09,603 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9957781	best: 0.9957784 (1197)	total: 15.7s	remaining: 23.5s
+2025-12-23 06:01:09,655 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9958670	best: 0.9958670 (1300)	total: 17s	remaining: 22.2s
+2025-12-23 06:01:11,240 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9959335	best: 0.9959335 (1400)	total: 18.6s	remaining: 21.2s
+2025-12-23 06:01:12,805 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9959648	best: 0.9959652 (1499)	total: 20.1s	remaining: 20.1s
+2025-12-23 06:01:14,489 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9960042	best: 0.9960042 (1600)	total: 21.8s	remaining: 19.1s
+2025-12-23 06:01:15,999 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9960348	best: 0.9960348 (1700)	total: 23.3s	remaining: 17.8s
+2025-12-23 06:01:17,425 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9960570	best: 0.9960570 (1800)	total: 24.7s	remaining: 16.5s
+2025-12-23 06:01:18,730 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9960599	best: 0.9960624 (1842)	total: 26s	remaining: 15s
+2025-12-23 06:01:20,086 - lightautoml.ml_algo.boost_cb - INFO3 - 2000:	test: 0.9960846	best: 0.9960879 (1989)	total: 27.4s	remaining: 13.7s
+2025-12-23 06:01:21,378 - lightautoml.ml_algo.boost_cb - INFO3 - 2100:	test: 0.9960821	best: 0.9960946 (2037)	total: 28.6s	remaining: 12.2s
+2025-12-23 06:01:21,867 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:01:21,868 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.996094601
+2025-12-23 06:01:21,869 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 2037
+2025-12-23 06:01:21,870 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 2038 iterations.
+2025-12-23 06:01:21,924 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 4[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:01:22,045 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8291593	best: 0.8291593 (0)	total: 13.2ms	remaining: 39.5s
+2025-12-23 06:01:23,343 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9559793	best: 0.9559793 (100)	total: 1.29s	remaining: 37.1s
+2025-12-23 06:01:24,641 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9777810	best: 0.9777810 (200)	total: 2.57s	remaining: 35.8s
+2025-12-23 06:01:25,966 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9857230	best: 0.9857230 (300)	total: 3.88s	remaining: 34.8s
+2025-12-23 06:01:27,297 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9899012	best: 0.9899012 (400)	total: 5.19s	remaining: 33.6s
+2025-12-23 06:01:28,611 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9923968	best: 0.9923968 (500)	total: 6.48s	remaining: 32.3s
+2025-12-23 06:01:29,911 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9936611	best: 0.9936672 (599)	total: 7.76s	remaining: 31s
+2025-12-23 06:01:31,221 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9943640	best: 0.9943672 (697)	total: 9.05s	remaining: 29.7s
+2025-12-23 06:01:32,551 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9948466	best: 0.9948476 (799)	total: 10.4s	remaining: 28.4s
+2025-12-23 06:01:33,828 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9951853	best: 0.9951853 (900)	total: 11.6s	remaining: 27.1s
+2025-12-23 06:01:35,181 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9954100	best: 0.9954100 (1000)	total: 12.9s	remaining: 25.9s
+2025-12-23 06:01:36,490 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9955936	best: 0.9955938 (1099)	total: 14.2s	remaining: 24.6s
+2025-12-23 06:01:37,819 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9956959	best: 0.9956960 (1198)	total: 15.5s	remaining: 23.3s
+2025-12-23 06:01:39,131 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9957889	best: 0.9957889 (1300)	total: 16.8s	remaining: 22s
+2025-12-23 06:01:40,433 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9958686	best: 0.9958698 (1398)	total: 18.1s	remaining: 20.7s
+2025-12-23 06:01:40,807 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9959307	best: 0.9959326 (1485)	total: 19.4s	remaining: 19.4s
+2025-12-23 06:01:42,134 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9959708	best: 0.9959708 (1600)	total: 20.7s	remaining: 18.1s
+2025-12-23 06:01:43,429 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9960146	best: 0.9960150 (1698)	total: 22s	remaining: 16.8s
+2025-12-23 06:01:44,812 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9960382	best: 0.9960388 (1798)	total: 23.4s	remaining: 15.5s
+2025-12-23 06:01:46,089 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9960791	best: 0.9960791 (1900)	total: 24.6s	remaining: 14.2s
+2025-12-23 06:01:47,419 - lightautoml.ml_algo.boost_cb - INFO3 - 2000:	test: 0.9961007	best: 0.9961009 (1998)	total: 25.9s	remaining: 12.9s
+2025-12-23 06:01:48,696 - lightautoml.ml_algo.boost_cb - INFO3 - 2100:	test: 0.9961073	best: 0.9961145 (2088)	total: 27.2s	remaining: 11.6s
+2025-12-23 06:01:50,059 - lightautoml.ml_algo.boost_cb - INFO3 - 2200:	test: 0.9961191	best: 0.9961201 (2138)	total: 28.5s	remaining: 10.3s
+2025-12-23 06:01:51,351 - lightautoml.ml_algo.boost_cb - INFO3 - 2300:	test: 0.9961386	best: 0.9961390 (2296)	total: 29.8s	remaining: 9.04s
+2025-12-23 06:01:52,705 - lightautoml.ml_algo.boost_cb - INFO3 - 2400:	test: 0.9961579	best: 0.9961579 (2400)	total: 31.1s	remaining: 7.75s
+2025-12-23 06:01:53,998 - lightautoml.ml_algo.boost_cb - INFO3 - 2500:	test: 0.9961916	best: 0.9961926 (2496)	total: 32.3s	remaining: 6.45s
+2025-12-23 06:01:55,282 - lightautoml.ml_algo.boost_cb - INFO3 - 2600:	test: 0.9961896	best: 0.9962046 (2548)	total: 33.6s	remaining: 5.15s
+2025-12-23 06:01:55,933 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:01:55,935 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.996204551
+2025-12-23 06:01:55,935 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 2548
+2025-12-23 06:01:55,936 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 2549 iterations.
+2025-12-23 06:01:56,007 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m finished. score = [1m0.9956111185242188[0m
+2025-12-23 06:01:56,010 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m fitting and predicting completed
+2025-12-23 06:01:56,012 - lightautoml.automl.base - INFO - Time left 9.93 secs
+
+2025-12-23 06:01:56,013 - lightautoml.automl.base - INFO - Time limit exceeded in one of the tasks. AutoML will blend level 1 models.
+
+2025-12-23 06:01:56,014 - lightautoml.automl.base - INFO - [1mLayer 1 training completed.[0m
+
+2025-12-23 06:01:56,037 - lightautoml.automl.blend - INFO - Blending: optimization starts with equal weights. Score = [1m0.9954437[0m
+2025-12-23 06:01:56,550 - lightautoml.automl.blend - INFO - Blending: iteration [1m0[0m: score = [1m0.9959235[0m, weights = [1m[0.05310731 0.3156309  0.3156309  0.3156309 ][0m
+2025-12-23 06:01:57,037 - lightautoml.automl.blend - INFO - Blending: iteration [1m1[0m: score = [1m0.9959350[0m, weights = [1m[0.05160657 0.56125396 0.3314114  0.05572809][0m
+2025-12-23 06:01:57,534 - lightautoml.automl.blend - INFO - Blending: no improvements for score. Terminated.
+
+2025-12-23 06:01:57,535 - lightautoml.automl.blend - INFO - Blending: best score = [1m0.9959350[0m, best weights = [1m[0.05160657 0.56125396 0.3314114  0.05572809][0m
+2025-12-23 06:01:57,543 - lightautoml.automl.presets.base - INFO - [1mAutoml preset training completed in 291.59 seconds[0m
+
+2025-12-23 06:01:57,544 - lightautoml.automl.presets.base - INFO - Model description:
+Final prediction for new objects (level 0) = 
+	 0.05161 * (3 averaged models Lvl_0_Pipe_0_Mod_0_LinearL2) +
+	 0.56125 * (2 averaged models Lvl_0_Pipe_1_Mod_0_LightGBM) +
+	 0.33141 * (4 averaged models Lvl_0_Pipe_1_Mod_2_CatBoost) +
+	 0.05573 * (5 averaged models Lvl_0_Pipe_1_Mod_3_Tuned_CatBoost) 
+
+2025-12-23 06:01:57,546 - lightautoml.addons.utilization.utilization - INFO - ==================================================
+2025-12-23 06:01:57,547 - __main__ - INFO - Модель обучена успешно
+2025-12-23 06:01:57,547 - __main__ - INFO - Оценка модели на validation set
+2025-12-23 06:01:57,734 - __main__ - INFO - Уникальные классы в validation: ['e', 'p']
+2025-12-23 06:01:57,863 - __main__ - INFO - Кодировка классов: {np.str_('e'): 0, np.str_('p'): 1}
+2025-12-23 06:01:57,864 - __main__ - INFO - Пример кодировки: первые 10 значений: [0 0 0 0 0 0 1 0 0 0], оригинальные: ['e' 'e' 'e' 'e' 'e' 'e' 'p' 'e' 'e' 'e']
+2025-12-23 06:03:31,509 - __main__ - INFO - Формат предсказаний: shape=(623389, 1), type=<class 'numpy.ndarray'>
+2025-12-23 06:03:31,513 - __main__ - INFO - Распределение предсказанных классов (encoded): {np.int64(0): np.int64(339967), np.int64(1): np.int64(283422)}
+2025-12-23 06:03:31,515 - __main__ - INFO - Распределение истинных классов (encoded): {np.int64(0): np.int64(282310), np.int64(1): np.int64(341079)}
+2025-12-23 06:03:31,516 - __main__ - INFO - Средняя вероятность класса 1 ('p'): 0.4522
+2025-12-23 06:03:31,517 - __main__ - INFO - Min/Max вероятности: 0.0001 / 0.9992
+2025-12-23 06:03:31,529 - __main__ - INFO - Accuracy с оригинальными предсказаниями: 0.0113
+2025-12-23 06:03:31,530 - __main__ - INFO - Accuracy с инвертированными предсказаниями: 0.9887
+2025-12-23 06:03:31,530 - __main__ - INFO - accuracy: 0.9887 vs 0.0113
+2025-12-23 06:03:31,688 - __main__ - INFO - Метрики: {'accuracy': 0.9887004743426656, 'f1_score': 0.9887023546543726, 'roc_auc': 0.996310868315269}
+2025-12-23 06:03:32,063 - __main__ - INFO - Модель сохранена в results/baseline/models/lama_config1.pkl
+2025-12-23 06:03:32,065 - __main__ - INFO - Метрики сохранены в results/baseline/02_lama_config1_metrics.txt
+2025-12-23 06:03:33,248 - __main__ - INFO - Предсказания сохранены в results/baseline/predictions/lama_config1_val.csv
+2025-12-23 06:03:39,267 - __main__ - INFO - Train split загружен: (2493556, 22)
+2025-12-23 06:03:39,268 - __main__ - INFO - Val split загружен: (623389, 22)
+2025-12-23 06:03:39,446 - __main__ - INFO - Используется выборка: 100000 строк из 2493556
+2025-12-23 06:03:39,621 - __main__ - INFO - Обучение LAMA (Config 2): timeout=300s, cpu_limit=1
+2025-12-23 06:03:39,640 - __main__ - INFO - Начало обучения модели (Config 2)...
+2025-12-23 06:03:39,641 - lightautoml.addons.utilization.utilization - INFO - Start automl [1mutilizator[0m with listed constraints:
+2025-12-23 06:03:39,643 - lightautoml.addons.utilization.utilization - INFO - - time: 300.00 seconds
+2025-12-23 06:03:39,644 - lightautoml.addons.utilization.utilization - INFO - - CPU: 1 cores
+2025-12-23 06:03:39,645 - lightautoml.addons.utilization.utilization - INFO - - memory: 16 GB
+
+2025-12-23 06:03:39,646 - lightautoml.addons.utilization.utilization - INFO - [1mIf one preset completes earlier, next preset configuration will be started[0m
+
+2025-12-23 06:03:39,647 - lightautoml.addons.utilization.utilization - INFO - ==================================================
+2025-12-23 06:03:39,649 - lightautoml.addons.utilization.utilization - INFO - Start 0 automl preset configuration:
+2025-12-23 06:03:39,650 - lightautoml.addons.utilization.utilization - INFO - [1mconf_0_sel_type_0.yml[0m, random state: {'reader_params': {'random_state': 42}, 'nn_params': {'random_state': 42}, 'general_params': {'return_all_predictions': False}}
+2025-12-23 06:03:39,663 - lightautoml.automl.presets.base - INFO - Stdout logging level is INFO.
+2025-12-23 06:03:39,667 - lightautoml.automl.presets.base - INFO - Task: binary
+
+2025-12-23 06:03:39,669 - lightautoml.automl.presets.base - INFO - Start automl preset with listed constraints:
+2025-12-23 06:03:39,670 - lightautoml.automl.presets.base - INFO - - time: 300.00 seconds
+2025-12-23 06:03:39,671 - lightautoml.automl.presets.base - INFO - - CPU: 1 cores
+2025-12-23 06:03:39,672 - lightautoml.automl.presets.base - INFO - - memory: 16 GB
+
+2025-12-23 06:03:39,674 - lightautoml.reader.base - INFO - [1mTrain data shape: (100000, 22)[0m
+
+2025-12-23 06:03:41,506 - lightautoml.reader.base - INFO3 - Feats was rejected during automatic roles guess: []
+2025-12-23 06:03:41,531 - lightautoml.automl.base - INFO - Layer [1m1[0m train process start. Time left 298.14 secs
+2025-12-23 06:03:43,915 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m ...
+2025-12-23 06:03:43,917 - lightautoml.ml_algo.base - DEBUG - Training params: {'tol': 1e-06, 'max_iter': 100, 'cs': [1e-05, 5e-05, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100, 500, 1000, 5000, 10000, 50000, 100000], 'early_stopping': 2, 'categorical_idx': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 'embed_sizes': array([13,  8, 14,  9, 13,  5,  9, 10,  5,  9, 14, 10,  8,  3],
+      dtype=int32), 'data_size': 33}
+2025-12-23 06:03:43,925 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m =====
+2025-12-23 06:03:44,288 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1e-05 score = 0.7751682719302802
+2025-12-23 06:03:44,641 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5e-05 score = 0.8301784767526604
+2025-12-23 06:03:45,112 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0001 score = 0.8539516686182917
+2025-12-23 06:03:45,709 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0005 score = 0.8970909366109822
+2025-12-23 06:03:45,159 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.001 score = 0.9096668987714466
+2025-12-23 06:03:45,841 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.005 score = 0.928916841804492
+2025-12-23 06:03:46,386 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.01 score = 0.9339586896668302
+2025-12-23 06:03:47,428 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.05 score = 0.9409087237057708
+2025-12-23 06:03:47,448 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.1 score = 0.9409087237057708
+2025-12-23 06:03:48,870 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.5 score = 0.9441498831546928
+2025-12-23 06:03:48,889 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1 score = 0.9441498831546928
+2025-12-23 06:03:48,912 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5 score = 0.9441498831546928
+2025-12-23 06:03:48,929 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 1[0m for [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m =====
+2025-12-23 06:03:49,292 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1e-05 score = 0.7751870557924286
+2025-12-23 06:03:49,640 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5e-05 score = 0.8304618739854244
+2025-12-23 06:03:50,090 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0001 score = 0.8542396508485564
+2025-12-23 06:03:50,677 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0005 score = 0.896843099589858
+2025-12-23 06:03:51,157 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.001 score = 0.9092240102064769
+2025-12-23 06:03:51,754 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.005 score = 0.9279501841080778
+2025-12-23 06:03:52,439 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.01 score = 0.9325875383460137
+2025-12-23 06:03:53,442 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.05 score = 0.9386917437480911
+2025-12-23 06:03:53,461 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.1 score = 0.9386917437480911
+2025-12-23 06:03:54,650 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.5 score = 0.9415473447548093
+2025-12-23 06:03:54,672 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1 score = 0.9415473447548093
+2025-12-23 06:03:54,692 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5 score = 0.9415473447548093
+2025-12-23 06:03:54,707 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 2[0m for [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m =====
+2025-12-23 06:03:55,128 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1e-05 score = 0.784703028955273
+2025-12-23 06:03:55,670 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5e-05 score = 0.8404974953303641
+2025-12-23 06:03:56,262 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0001 score = 0.8633342077614596
+2025-12-23 06:03:57,025 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0005 score = 0.9041763869622484
+2025-12-23 06:03:57,741 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.001 score = 0.916024565256489
+2025-12-23 06:03:58,608 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.005 score = 0.9338031326559116
+2025-12-23 06:03:59,291 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.01 score = 0.938283724366535
+2025-12-23 06:04:00,577 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.05 score = 0.9441940433891479
+2025-12-23 06:04:00,608 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.1 score = 0.9441940433891479
+2025-12-23 06:04:02,269 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.5 score = 0.9471241543882551
+2025-12-23 06:04:02,290 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1 score = 0.9471241543882551
+2025-12-23 06:04:02,314 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5 score = 0.9471241543882551
+2025-12-23 06:04:02,321 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 2
+
+2025-12-23 06:04:02,342 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m finished. score = [1m0.9442300194507016[0m
+2025-12-23 06:04:02,344 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m fitting and predicting completed
+2025-12-23 06:04:02,347 - lightautoml.automl.base - INFO - Time left 277.32 secs
+
+2025-12-23 06:04:07,866 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m ...
+2025-12-23 06:04:07,868 - lightautoml.ml_algo.base - DEBUG - Training params: {'task': 'train', 'learning_rate': 0.03, 'num_leaves': 64, 'feature_fraction': 0.7, 'bagging_fraction': 0.7, 'bagging_freq': 1, 'max_depth': -1, 'verbosity': -1, 'reg_alpha': 1, 'reg_lambda': 0.0, 'min_split_gain': 0.0, 'zero_as_missing': False, 'num_threads': 1, 'max_bin': 255, 'min_data_in_bin': 3, 'num_trees': 1200, 'early_stopping_rounds': 200, 'random_state': 42, 'verbose_eval': 100}
+2025-12-23 06:04:07,877 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m =====
+2025-12-23 06:04:08,197 - lightautoml.ml_algo.boost_lgbm - INFO3 - Training until validation scores don't improve for 200 rounds
+2025-12-23 06:04:09,782 - lightautoml.ml_algo.boost_lgbm - INFO3 - [100]	valid's auc: 0.991614
+2025-12-23 06:04:11,468 - lightautoml.ml_algo.boost_lgbm - INFO3 - [200]	valid's auc: 0.995989
+2025-12-23 06:04:13,127 - lightautoml.ml_algo.boost_lgbm - INFO3 - [300]	valid's auc: 0.996344
+2025-12-23 06:04:14,666 - lightautoml.ml_algo.boost_lgbm - INFO3 - [400]	valid's auc: 0.99639
+2025-12-23 06:04:16,257 - lightautoml.ml_algo.boost_lgbm - INFO3 - [500]	valid's auc: 0.996353
+2025-12-23 06:04:16,957 - lightautoml.ml_algo.boost_lgbm - INFO3 - Early stopping, best iteration is:
+[350]	valid's auc: 0.996417
+2025-12-23 06:04:16,512 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 1[0m for [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m =====
+2025-12-23 06:04:16,827 - lightautoml.ml_algo.boost_lgbm - INFO3 - Training until validation scores don't improve for 200 rounds
+2025-12-23 06:04:18,351 - lightautoml.ml_algo.boost_lgbm - INFO3 - [100]	valid's auc: 0.990532
+2025-12-23 06:04:20,200 - lightautoml.ml_algo.boost_lgbm - INFO3 - [200]	valid's auc: 0.994093
+2025-12-23 06:04:21,835 - lightautoml.ml_algo.boost_lgbm - INFO3 - [300]	valid's auc: 0.994735
+2025-12-23 06:04:23,378 - lightautoml.ml_algo.boost_lgbm - INFO3 - [400]	valid's auc: 0.994871
+2025-12-23 06:04:24,908 - lightautoml.ml_algo.boost_lgbm - INFO3 - [500]	valid's auc: 0.994993
+2025-12-23 06:04:26,448 - lightautoml.ml_algo.boost_lgbm - INFO3 - [600]	valid's auc: 0.995012
+2025-12-23 06:04:27,972 - lightautoml.ml_algo.boost_lgbm - INFO3 - [700]	valid's auc: 0.995028
+2025-12-23 06:04:29,492 - lightautoml.ml_algo.boost_lgbm - INFO3 - [800]	valid's auc: 0.995036
+2025-12-23 06:04:31,126 - lightautoml.ml_algo.boost_lgbm - INFO3 - [900]	valid's auc: 0.995029
+2025-12-23 06:04:32,747 - lightautoml.ml_algo.boost_lgbm - INFO3 - [1000]	valid's auc: 0.995015
+2025-12-23 06:04:32,920 - lightautoml.ml_algo.boost_lgbm - INFO3 - Early stopping, best iteration is:
+[811]	valid's auc: 0.995046
+2025-12-23 06:04:34,886 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 1
+
+2025-12-23 06:04:34,896 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m finished. score = [1m0.9954683440776623[0m
+2025-12-23 06:04:34,897 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m fitting and predicting completed
+2025-12-23 06:04:34,899 - lightautoml.ml_algo.tuning.optuna - INFO - Start hyperparameters optimization for [1mLvl_0_Pipe_1_Mod_1_Tuned_LightGBM[0m ... Time budget is 1.00 secs
+2025-12-23 06:04:34,911 - optuna.storages._in_memory - INFO - A new study created in memory with name: no-name-7fc2ce03-d84c-4be9-b3f3-e057e892e477
+2025-12-23 06:04:35,238 - lightautoml.ml_algo.boost_lgbm - INFO3 - Training until validation scores don't improve for 200 rounds
+2025-12-23 06:04:37,817 - lightautoml.ml_algo.boost_lgbm - INFO3 - [100]	valid's auc: 0.995608
+2025-12-23 06:04:40,587 - lightautoml.ml_algo.boost_lgbm - INFO3 - [200]	valid's auc: 0.996596
+2025-12-23 06:04:43,301 - lightautoml.ml_algo.boost_lgbm - INFO3 - [300]	valid's auc: 0.996592
+2025-12-23 06:04:45,938 - lightautoml.ml_algo.boost_lgbm - INFO3 - [400]	valid's auc: 0.996577
+2025-12-23 06:04:47,852 - lightautoml.ml_algo.boost_lgbm - INFO3 - Early stopping, best iteration is:
+[274]	valid's auc: 0.996602
+2025-12-23 06:04:47,864 - optuna.study.study - INFO - Trial 0 finished with value: 0.9966016845916361 and parameters: {'feature_fraction': 0.6872700594236812, 'num_leaves': 244, 'bagging_fraction': 0.8659969709057025, 'min_sum_hessian_in_leaf': 0.24810409748678125, 'reg_alpha': 2.5361081166471375e-07, 'reg_lambda': 2.5348407664333426e-07}. Best is trial 0 with value: 0.9966016845916361.
+2025-12-23 06:04:47,869 - lightautoml.ml_algo.tuning.optuna - INFO3 - [1mTrial 1[0m with hyperparameters {'feature_fraction': 0.6872700594236812, 'num_leaves': 244, 'bagging_fraction': 0.8659969709057025, 'min_sum_hessian_in_leaf': 0.24810409748678125, 'reg_alpha': 2.5361081166471375e-07, 'reg_lambda': 2.5348407664333426e-07} scored 0.9966016845916361 in 0:00:12.951279
+2025-12-23 06:04:47,877 - lightautoml.ml_algo.tuning.optuna - INFO - Hyperparameters optimization for [1mLvl_0_Pipe_1_Mod_1_Tuned_LightGBM[0m completed
+2025-12-23 06:04:47,878 - lightautoml.ml_algo.tuning.optuna - INFO2 - The set of hyperparameters [1m{'feature_fraction': 0.6872700594236812, 'num_leaves': 244, 'bagging_fraction': 0.8659969709057025, 'min_sum_hessian_in_leaf': 0.24810409748678125, 'reg_alpha': 2.5361081166471375e-07, 'reg_lambda': 2.5348407664333426e-07}[0m
+ achieve 0.9966 auc
+2025-12-23 06:04:47,900 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m ...
+2025-12-23 06:04:47,903 - lightautoml.ml_algo.base - DEBUG - Training params: {'task_type': 'CPU', 'thread_count': 1, 'random_seed': 42, 'num_trees': 1500, 'learning_rate': 0.045, 'l2_leaf_reg': 0.01, 'bootstrap_type': 'Bernoulli', 'grow_policy': 'SymmetricTree', 'max_depth': 5, 'min_data_in_leaf': 1, 'one_hot_max_size': 10, 'fold_permutation_block': 1, 'boosting_type': 'Plain', 'boost_from_average': True, 'od_type': 'Iter', 'od_wait': 100, 'max_bin': 32, 'feature_border_type': 'GreedyLogSum', 'nan_mode': 'Min', 'verbose': 100, 'allow_writing_files': False, 'verbose_eval': 100}
+2025-12-23 06:04:47,917 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m =====
+2025-12-23 06:04:48,139 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8342909	best: 0.8342909 (0)	total: 27.8ms	remaining: 41.6s
+2025-12-23 06:04:49,926 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9812245	best: 0.9812245 (100)	total: 1.78s	remaining: 24.6s
+2025-12-23 06:04:51,789 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9914408	best: 0.9914408 (200)	total: 3.6s	remaining: 23.3s
+2025-12-23 06:04:53,470 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9944083	best: 0.9944083 (300)	total: 5.25s	remaining: 20.9s
+2025-12-23 06:04:55,269 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9952982	best: 0.9952982 (400)	total: 7.01s	remaining: 19.2s
+2025-12-23 06:04:56,954 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9955776	best: 0.9955783 (490)	total: 8.66s	remaining: 17.3s
+2025-12-23 06:04:58,549 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9956873	best: 0.9956873 (600)	total: 10.2s	remaining: 15.3s
+2025-12-23 06:05:00,236 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9957603	best: 0.9957639 (657)	total: 11.9s	remaining: 13.5s
+2025-12-23 06:05:01,827 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9958526	best: 0.9958528 (799)	total: 13.4s	remaining: 11.7s
+2025-12-23 06:05:03,460 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9958853	best: 0.9958912 (864)	total: 15s	remaining: 9.97s
+2025-12-23 06:05:05,153 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9959196	best: 0.9959254 (991)	total: 16.7s	remaining: 8.3s
+2025-12-23 06:05:06,822 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:05:06,824 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9959253748
+2025-12-23 06:05:06,825 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 991
+2025-12-23 06:05:06,825 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 992 iterations.
+2025-12-23 06:05:06,873 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 1[0m for [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m =====
+2025-12-23 06:05:07,016 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8408125	best: 0.8408125 (0)	total: 16.8ms	remaining: 25.2s
+2025-12-23 06:05:08,788 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9794951	best: 0.9794951 (100)	total: 1.75s	remaining: 24.2s
+2025-12-23 06:05:10,364 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9908872	best: 0.9908872 (200)	total: 3.29s	remaining: 21.2s
+2025-12-23 06:05:12,236 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9930885	best: 0.9930885 (300)	total: 5.12s	remaining: 20.4s
+2025-12-23 06:05:13,913 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9937777	best: 0.9937777 (400)	total: 6.77s	remaining: 18.6s
+2025-12-23 06:05:15,637 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9940524	best: 0.9940524 (500)	total: 8.47s	remaining: 16.9s
+2025-12-23 06:05:17,425 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9941690	best: 0.9941731 (597)	total: 10.2s	remaining: 15.3s
+2025-12-23 06:05:18,046 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9941827	best: 0.9942014 (611)	total: 12.1s	remaining: 13.8s
+2025-12-23 06:05:18,233 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:05:18,235 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9942013955
+2025-12-23 06:05:18,236 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 611
+2025-12-23 06:05:18,237 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 612 iterations.
+2025-12-23 06:05:18,285 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 2[0m for [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m =====
+2025-12-23 06:05:18,437 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8437546	best: 0.8437546 (0)	total: 20.5ms	remaining: 30.7s
+2025-12-23 06:05:20,380 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9819320	best: 0.9819320 (100)	total: 1.94s	remaining: 26.9s
+2025-12-23 06:05:22,434 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9923072	best: 0.9923072 (200)	total: 3.97s	remaining: 25.7s
+2025-12-23 06:05:24,200 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9945226	best: 0.9945226 (300)	total: 5.71s	remaining: 22.8s
+2025-12-23 06:05:25,948 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9952202	best: 0.9952202 (400)	total: 7.44s	remaining: 20.4s
+2025-12-23 06:05:27,762 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9955027	best: 0.9955027 (500)	total: 9.22s	remaining: 18.4s
+2025-12-23 06:05:29,586 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9956413	best: 0.9956413 (600)	total: 11s	remaining: 16.4s
+2025-12-23 06:05:31,524 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9957421	best: 0.9957421 (700)	total: 12.9s	remaining: 14.7s
+2025-12-23 06:05:33,609 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9957870	best: 0.9958006 (760)	total: 14.9s	remaining: 13s
+2025-12-23 06:05:35,330 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9958495	best: 0.9958495 (900)	total: 16.5s	remaining: 11s
+2025-12-23 06:05:37,164 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9958902	best: 0.9958929 (998)	total: 18.3s	remaining: 9.13s
+2025-12-23 06:05:38,843 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9959205	best: 0.9959349 (1074)	total: 19.9s	remaining: 7.23s
+2025-12-23 06:05:40,444 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9959599	best: 0.9959632 (1190)	total: 21.5s	remaining: 5.35s
+2025-12-23 06:05:42,162 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9959745	best: 0.9959807 (1249)	total: 23.2s	remaining: 3.54s
+2025-12-23 06:05:43,719 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9960269	best: 0.9960269 (1400)	total: 24.7s	remaining: 1.74s
+2025-12-23 06:05:45,316 - lightautoml.ml_algo.boost_cb - INFO3 - 1499:	test: 0.9960424	best: 0.9960449 (1496)	total: 26.3s	remaining: 0us
+2025-12-23 06:05:45,318 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9960449479
+2025-12-23 06:05:45,319 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1496
+2025-12-23 06:05:45,320 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1497 iterations.
+2025-12-23 06:05:45,375 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 2
+
+2025-12-23 06:05:45,389 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m finished. score = [1m0.9954301485152708[0m
+2025-12-23 06:05:45,390 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m fitting and predicting completed
+2025-12-23 06:05:45,391 - lightautoml.ml_algo.tuning.optuna - INFO - Start hyperparameters optimization for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m ... Time budget is 1.00 secs
+2025-12-23 06:05:45,404 - optuna.storages._in_memory - INFO - A new study created in memory with name: no-name-735795cc-2e6e-4255-a085-41590db64098
+2025-12-23 06:05:45,560 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8160565	best: 0.8160565 (0)	total: 12.8ms	remaining: 19.2s
+2025-12-23 06:05:46,913 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9679084	best: 0.9679084 (100)	total: 1.35s	remaining: 18.6s
+2025-12-23 06:05:48,284 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9846176	best: 0.9846176 (200)	total: 2.7s	remaining: 17.4s
+2025-12-23 06:05:49,621 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9908882	best: 0.9908882 (300)	total: 4.02s	remaining: 16s
+2025-12-23 06:05:49,701 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9935117	best: 0.9935117 (400)	total: 5.33s	remaining: 14.6s
+2025-12-23 06:05:51,042 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9945431	best: 0.9945431 (500)	total: 6.65s	remaining: 13.3s
+2025-12-23 06:05:52,376 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9950554	best: 0.9950554 (600)	total: 7.97s	remaining: 11.9s
+2025-12-23 06:05:53,727 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9953126	best: 0.9953126 (700)	total: 9.31s	remaining: 10.6s
+2025-12-23 06:05:55,076 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9954617	best: 0.9954617 (800)	total: 10.6s	remaining: 9.29s
+2025-12-23 06:05:56,390 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9955578	best: 0.9955578 (900)	total: 11.9s	remaining: 7.94s
+2025-12-23 06:05:57,773 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9956399	best: 0.9956480 (997)	total: 13.3s	remaining: 6.64s
+2025-12-23 06:05:59,142 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9957034	best: 0.9957034 (1100)	total: 14.7s	remaining: 5.32s
+2025-12-23 06:06:00,467 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9957390	best: 0.9957406 (1194)	total: 15.9s	remaining: 3.97s
+2025-12-23 06:06:01,878 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9957759	best: 0.9957759 (1300)	total: 17.3s	remaining: 2.65s
+2025-12-23 06:06:03,256 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9958194	best: 0.9958194 (1400)	total: 18.6s	remaining: 1.31s
+2025-12-23 06:06:04,675 - lightautoml.ml_algo.boost_cb - INFO3 - 1499:	test: 0.9958456	best: 0.9958502 (1490)	total: 20s	remaining: 0us
+2025-12-23 06:06:04,676 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9958502393
+2025-12-23 06:06:04,677 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1490
+2025-12-23 06:06:04,678 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1491 iterations.
+2025-12-23 06:06:04,724 - optuna.study.study - INFO - Trial 0 finished with value: 0.9958502393136671 and parameters: {'max_depth': 4, 'nan_mode': 'Max', 'l2_leaf_reg': 0.0024430162614261413, 'min_data_in_leaf': 4}. Best is trial 0 with value: 0.9958502393136671.
+2025-12-23 06:06:04,728 - lightautoml.ml_algo.tuning.optuna - INFO3 - [1mTrial 1[0m with hyperparameters {'max_depth': 4, 'nan_mode': 'Max', 'l2_leaf_reg': 0.0024430162614261413, 'min_data_in_leaf': 4} scored 0.9958502393136671 in 0:00:19.319066
+2025-12-23 06:06:04,733 - lightautoml.ml_algo.tuning.optuna - INFO - Hyperparameters optimization for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m completed
+2025-12-23 06:06:04,734 - lightautoml.ml_algo.tuning.optuna - INFO2 - The set of hyperparameters [1m{'max_depth': 4, 'nan_mode': 'Max', 'l2_leaf_reg': 0.0024430162614261413, 'min_data_in_leaf': 4}[0m
+ achieve 0.9959 auc
+2025-12-23 06:06:04,734 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m ...
+2025-12-23 06:06:04,736 - lightautoml.ml_algo.base - DEBUG - Training params: {'task_type': 'CPU', 'thread_count': 1, 'random_seed': 42, 'num_trees': 3000, 'learning_rate': 0.03, 'l2_leaf_reg': 0.0024430162614261413, 'bootstrap_type': 'Bernoulli', 'grow_policy': 'SymmetricTree', 'max_depth': 4, 'min_data_in_leaf': 4, 'one_hot_max_size': 10, 'fold_permutation_block': 1, 'boosting_type': 'Plain', 'boost_from_average': True, 'od_type': 'Iter', 'od_wait': 100, 'max_bin': 32, 'feature_border_type': 'GreedyLogSum', 'nan_mode': 'Max', 'verbose': 100, 'allow_writing_files': False, 'verbose_eval': 100}
+2025-12-23 06:06:04,745 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:06:04,876 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8160565	best: 0.8160565 (0)	total: 15.4ms	remaining: 46.2s
+2025-12-23 06:06:06,243 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9510283	best: 0.9510283 (100)	total: 1.34s	remaining: 38.5s
+2025-12-23 06:06:07,644 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9759718	best: 0.9759718 (200)	total: 2.72s	remaining: 37.9s
+2025-12-23 06:06:09,009 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9849575	best: 0.9849575 (300)	total: 4.07s	remaining: 36.5s
+2025-12-23 06:06:10,388 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9893967	best: 0.9893967 (400)	total: 5.42s	remaining: 35.2s
+2025-12-23 06:06:11,726 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9920443	best: 0.9920443 (500)	total: 6.74s	remaining: 33.6s
+2025-12-23 06:06:13,106 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9934913	best: 0.9934913 (600)	total: 8.1s	remaining: 32.3s
+2025-12-23 06:06:14,446 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9943060	best: 0.9943060 (700)	total: 9.42s	remaining: 30.9s
+2025-12-23 06:06:15,812 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9947740	best: 0.9947740 (800)	total: 10.8s	remaining: 29.6s
+2025-12-23 06:06:17,101 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9950678	best: 0.9950678 (900)	total: 12s	remaining: 28s
+2025-12-23 06:06:18,476 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9952630	best: 0.9952630 (1000)	total: 13.4s	remaining: 26.7s
+2025-12-23 06:06:19,788 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9954045	best: 0.9954045 (1100)	total: 14.7s	remaining: 25.3s
+2025-12-23 06:06:21,103 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9954754	best: 0.9954754 (1200)	total: 16s	remaining: 23.9s
+2025-12-23 06:06:21,295 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9955431	best: 0.9955431 (1300)	total: 17.4s	remaining: 22.7s
+2025-12-23 06:06:22,717 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9956083	best: 0.9956083 (1400)	total: 18.8s	remaining: 21.5s
+2025-12-23 06:06:24,099 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9956576	best: 0.9956579 (1499)	total: 20.2s	remaining: 20.1s
+2025-12-23 06:06:25,447 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9956879	best: 0.9956884 (1598)	total: 21.5s	remaining: 18.8s
+2025-12-23 06:06:26,810 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9957238	best: 0.9957239 (1698)	total: 22.8s	remaining: 17.4s
+2025-12-23 06:06:28,142 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9957352	best: 0.9957356 (1778)	total: 24.1s	remaining: 16.1s
+2025-12-23 06:06:29,442 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9957672	best: 0.9957674 (1897)	total: 25.4s	remaining: 14.7s
+2025-12-23 06:06:30,839 - lightautoml.ml_algo.boost_cb - INFO3 - 2000:	test: 0.9957998	best: 0.9958001 (1998)	total: 26.8s	remaining: 13.4s
+2025-12-23 06:06:32,170 - lightautoml.ml_algo.boost_cb - INFO3 - 2100:	test: 0.9958110	best: 0.9958110 (2100)	total: 28.1s	remaining: 12s
+2025-12-23 06:06:33,560 - lightautoml.ml_algo.boost_cb - INFO3 - 2200:	test: 0.9958249	best: 0.9958309 (2192)	total: 29.5s	remaining: 10.7s
+2025-12-23 06:06:34,779 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:06:34,781 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.995830941
+2025-12-23 06:06:34,781 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 2192
+2025-12-23 06:06:34,782 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 2193 iterations.
+2025-12-23 06:06:34,843 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 1[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:06:34,968 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8227618	best: 0.8227618 (0)	total: 12.2ms	remaining: 36.6s
+2025-12-23 06:06:36,329 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9543345	best: 0.9543345 (100)	total: 1.35s	remaining: 38.7s
+2025-12-23 06:06:37,703 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9764311	best: 0.9764311 (200)	total: 2.7s	remaining: 37.6s
+2025-12-23 06:06:39,070 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9843914	best: 0.9844085 (299)	total: 4.04s	remaining: 36.2s
+2025-12-23 06:06:40,395 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9885181	best: 0.9885181 (400)	total: 5.34s	remaining: 34.6s
+2025-12-23 06:06:41,698 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9906452	best: 0.9906510 (499)	total: 6.62s	remaining: 33s
+2025-12-23 06:06:43,051 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9917939	best: 0.9917939 (600)	total: 7.95s	remaining: 31.7s
+2025-12-23 06:06:44,368 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9924202	best: 0.9924202 (700)	total: 9.25s	remaining: 30.3s
+2025-12-23 06:06:45,748 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9929398	best: 0.9929398 (800)	total: 10.6s	remaining: 29.1s
+2025-12-23 06:06:47,090 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9932100	best: 0.9932100 (900)	total: 11.9s	remaining: 27.8s
+2025-12-23 06:06:48,433 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9934438	best: 0.9934438 (1000)	total: 13.2s	remaining: 26.4s
+2025-12-23 06:06:49,728 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9935897	best: 0.9935899 (1098)	total: 14.5s	remaining: 25s
+2025-12-23 06:06:51,084 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9936971	best: 0.9937099 (1176)	total: 15.8s	remaining: 23.7s
+2025-12-23 06:06:52,459 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9937846	best: 0.9937847 (1299)	total: 17.2s	remaining: 22.5s
+2025-12-23 06:06:53,731 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9938644	best: 0.9938710 (1386)	total: 18.4s	remaining: 21.1s
+2025-12-23 06:06:55,154 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9939222	best: 0.9939222 (1500)	total: 19.8s	remaining: 19.8s
+2025-12-23 06:06:56,510 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9939795	best: 0.9939795 (1600)	total: 21.2s	remaining: 18.5s
+2025-12-23 06:06:57,834 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9939553	best: 0.9940219 (1680)	total: 22.5s	remaining: 17.2s
+2025-12-23 06:06:58,958 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:06:58,960 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9940219451
+2025-12-23 06:06:58,961 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1680
+2025-12-23 06:06:58,961 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1681 iterations.
+2025-12-23 06:06:59,031 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 2[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:06:59,185 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8247240	best: 0.8247240 (0)	total: 12.9ms	remaining: 38.8s
+2025-12-23 06:07:00,613 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9562018	best: 0.9562018 (100)	total: 1.42s	remaining: 40.7s
+2025-12-23 06:07:02,005 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9791809	best: 0.9791809 (200)	total: 2.79s	remaining: 38.8s
+2025-12-23 06:07:03,353 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9868514	best: 0.9868514 (300)	total: 4.11s	remaining: 36.9s
+2025-12-23 06:07:04,751 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9904591	best: 0.9904591 (400)	total: 5.49s	remaining: 35.6s
+2025-12-23 06:07:06,120 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9925695	best: 0.9925695 (500)	total: 6.84s	remaining: 34.1s
+2025-12-23 06:07:07,409 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9936310	best: 0.9936310 (600)	total: 8.11s	remaining: 32.4s
+2025-12-23 06:07:07,202 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9942484	best: 0.9942484 (700)	total: 9.45s	remaining: 31s
+2025-12-23 06:07:08,574 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9946533	best: 0.9946533 (800)	total: 10.8s	remaining: 29.6s
+2025-12-23 06:07:09,854 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9949787	best: 0.9949787 (900)	total: 12.1s	remaining: 28.1s
+2025-12-23 06:07:11,171 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9951473	best: 0.9951516 (986)	total: 13.4s	remaining: 26.7s
+2025-12-23 06:07:12,468 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9953108	best: 0.9953108 (1100)	total: 14.6s	remaining: 25.2s
+2025-12-23 06:07:13,819 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9954398	best: 0.9954417 (1198)	total: 16s	remaining: 23.9s
+2025-12-23 06:07:15,127 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9955234	best: 0.9955234 (1300)	total: 17.2s	remaining: 22.5s
+2025-12-23 06:07:16,437 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9955971	best: 0.9955971 (1400)	total: 18.5s	remaining: 21.2s
+2025-12-23 06:07:17,733 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9956317	best: 0.9956317 (1500)	total: 19.8s	remaining: 19.8s
+2025-12-23 06:07:19,083 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9957369	best: 0.9957369 (1600)	total: 21.1s	remaining: 18.5s
+2025-12-23 06:07:20,430 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9958079	best: 0.9958079 (1700)	total: 22.5s	remaining: 17.2s
+2025-12-23 06:07:21,758 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9958429	best: 0.9958470 (1792)	total: 23.8s	remaining: 15.8s
+2025-12-23 06:07:23,081 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9958198	best: 0.9958531 (1855)	total: 25.1s	remaining: 14.5s
+2025-12-23 06:07:23,819 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:07:23,820 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9958530539
+2025-12-23 06:07:23,821 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 1855
+2025-12-23 06:07:23,822 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 1856 iterations.
+2025-12-23 06:07:23,871 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 3[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:07:23,997 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8235235	best: 0.8235235 (0)	total: 12.8ms	remaining: 38.4s
+2025-12-23 06:07:25,381 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9541033	best: 0.9541033 (100)	total: 1.37s	remaining: 39.4s
+2025-12-23 06:07:26,752 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9767504	best: 0.9767504 (200)	total: 2.72s	remaining: 37.9s
+2025-12-23 06:07:28,121 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9857330	best: 0.9857330 (300)	total: 4.06s	remaining: 36.4s
+2025-12-23 06:07:29,493 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9900971	best: 0.9900971 (400)	total: 5.41s	remaining: 35.1s
+2025-12-23 06:07:30,803 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9923502	best: 0.9923502 (500)	total: 6.7s	remaining: 33.4s
+2025-12-23 06:07:32,165 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9937047	best: 0.9937047 (600)	total: 8.04s	remaining: 32.1s
+2025-12-23 06:07:33,468 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9945494	best: 0.9945494 (700)	total: 9.32s	remaining: 30.6s
+2025-12-23 06:07:34,839 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9949906	best: 0.9949906 (800)	total: 10.7s	remaining: 29.3s
+2025-12-23 06:07:36,148 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9952855	best: 0.9952855 (900)	total: 11.9s	remaining: 27.8s
+2025-12-23 06:07:37,447 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9955204	best: 0.9955204 (1000)	total: 13.2s	remaining: 26.4s
+2025-12-23 06:07:37,649 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9956632	best: 0.9956632 (1100)	total: 14.5s	remaining: 25.1s
+2025-12-23 06:07:38,959 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9957781	best: 0.9957784 (1197)	total: 15.8s	remaining: 23.7s
+2025-12-23 06:07:40,285 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9958670	best: 0.9958670 (1300)	total: 17.1s	remaining: 22.4s
+2025-12-23 06:07:41,589 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9959335	best: 0.9959335 (1400)	total: 18.4s	remaining: 21s
+2025-12-23 06:07:42,930 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9959648	best: 0.9959652 (1499)	total: 19.7s	remaining: 19.7s
+2025-12-23 06:07:44,272 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9960042	best: 0.9960042 (1600)	total: 21.1s	remaining: 18.4s
+2025-12-23 06:07:45,549 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9960348	best: 0.9960348 (1700)	total: 22.3s	remaining: 17s
+2025-12-23 06:07:46,910 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9960570	best: 0.9960570 (1800)	total: 23.6s	remaining: 15.7s
+2025-12-23 06:07:48,213 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9960599	best: 0.9960624 (1842)	total: 24.9s	remaining: 14.4s
+2025-12-23 06:07:49,525 - lightautoml.ml_algo.boost_cb - INFO3 - 2000:	test: 0.9960846	best: 0.9960879 (1989)	total: 26.2s	remaining: 13.1s
+2025-12-23 06:07:50,881 - lightautoml.ml_algo.boost_cb - INFO3 - 2100:	test: 0.9960821	best: 0.9960946 (2037)	total: 27.5s	remaining: 11.8s
+2025-12-23 06:07:51,365 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:07:51,367 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.996094601
+2025-12-23 06:07:51,368 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 2037
+2025-12-23 06:07:51,368 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 2038 iterations.
+2025-12-23 06:07:51,418 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 4[0m for [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m =====
+2025-12-23 06:07:51,541 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8291593	best: 0.8291593 (0)	total: 13.2ms	remaining: 39.6s
+2025-12-23 06:07:52,903 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9559793	best: 0.9559793 (100)	total: 1.35s	remaining: 38.7s
+2025-12-23 06:07:54,332 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9777810	best: 0.9777810 (200)	total: 2.75s	remaining: 38.3s
+2025-12-23 06:07:55,726 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9857230	best: 0.9857230 (300)	total: 4.11s	remaining: 36.9s
+2025-12-23 06:07:57,103 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9899012	best: 0.9899012 (400)	total: 5.46s	remaining: 35.4s
+2025-12-23 06:07:58,463 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9923968	best: 0.9923968 (500)	total: 6.79s	remaining: 33.9s
+2025-12-23 06:07:59,853 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9936611	best: 0.9936672 (599)	total: 8.15s	remaining: 32.6s
+2025-12-23 06:08:01,225 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9943640	best: 0.9943672 (697)	total: 9.5s	remaining: 31.2s
+2025-12-23 06:08:02,629 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9948466	best: 0.9948476 (799)	total: 10.9s	remaining: 29.9s
+2025-12-23 06:08:03,987 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9951853	best: 0.9951853 (900)	total: 12.2s	remaining: 28.5s
+2025-12-23 06:08:05,334 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9954100	best: 0.9954100 (1000)	total: 13.5s	remaining: 27s
+2025-12-23 06:08:06,751 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9955936	best: 0.9955938 (1099)	total: 14.9s	remaining: 25.7s
+2025-12-23 06:08:08,122 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9956959	best: 0.9956960 (1198)	total: 16.3s	remaining: 24.4s
+2025-12-23 06:08:09,462 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9957889	best: 0.9957889 (1300)	total: 17.6s	remaining: 23s
+2025-12-23 06:08:09,617 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9958686	best: 0.9958698 (1398)	total: 18.9s	remaining: 21.6s
+2025-12-23 06:08:10,979 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9959307	best: 0.9959326 (1485)	total: 20.3s	remaining: 20.3s
+2025-12-23 06:08:12,312 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9959708	best: 0.9959708 (1600)	total: 21.6s	remaining: 18.9s
+2025-12-23 06:08:13,626 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9960146	best: 0.9960150 (1698)	total: 22.9s	remaining: 17.5s
+2025-12-23 06:08:15,016 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9960382	best: 0.9960388 (1798)	total: 24.3s	remaining: 16.2s
+2025-12-23 06:08:16,377 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9960791	best: 0.9960791 (1900)	total: 25.6s	remaining: 14.8s
+2025-12-23 06:08:17,764 - lightautoml.ml_algo.boost_cb - INFO3 - 2000:	test: 0.9961007	best: 0.9961009 (1998)	total: 27s	remaining: 13.5s
+2025-12-23 06:08:19,143 - lightautoml.ml_algo.boost_cb - INFO3 - 2100:	test: 0.9961073	best: 0.9961145 (2088)	total: 28.3s	remaining: 12.1s
+2025-12-23 06:08:20,469 - lightautoml.ml_algo.boost_cb - INFO3 - 2200:	test: 0.9961191	best: 0.9961201 (2138)	total: 29.6s	remaining: 10.7s
+2025-12-23 06:08:21,842 - lightautoml.ml_algo.boost_cb - INFO3 - 2300:	test: 0.9961386	best: 0.9961390 (2296)	total: 30.9s	remaining: 9.4s
+2025-12-23 06:08:23,202 - lightautoml.ml_algo.boost_cb - INFO3 - 2400:	test: 0.9961579	best: 0.9961579 (2400)	total: 32.3s	remaining: 8.05s
+2025-12-23 06:08:24,559 - lightautoml.ml_algo.boost_cb - INFO3 - 2500:	test: 0.9961916	best: 0.9961926 (2496)	total: 33.6s	remaining: 6.7s
+2025-12-23 06:08:25,871 - lightautoml.ml_algo.boost_cb - INFO3 - 2600:	test: 0.9961896	best: 0.9962046 (2548)	total: 34.9s	remaining: 5.35s
+2025-12-23 06:08:26,537 - lightautoml.ml_algo.boost_cb - INFO3 - Stopped by overfitting detector  (100 iterations wait)
+2025-12-23 06:08:26,538 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.996204551
+2025-12-23 06:08:26,539 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 2548
+2025-12-23 06:08:26,539 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 2549 iterations.
+2025-12-23 06:08:26,612 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m finished. score = [1m0.9956111185242188[0m
+2025-12-23 06:08:26,614 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_1_Mod_3_Tuned_CatBoost[0m fitting and predicting completed
+2025-12-23 06:08:26,616 - lightautoml.automl.base - INFO - Time left 13.05 secs
+
+2025-12-23 06:08:26,617 - lightautoml.automl.base - INFO - Time limit exceeded in one of the tasks. AutoML will blend level 1 models.
+
+2025-12-23 06:08:26,618 - lightautoml.automl.base - INFO - [1mLayer 1 training completed.[0m
+
+2025-12-23 06:08:26,640 - lightautoml.automl.blend - INFO - Blending: optimization starts with equal weights. Score = [1m0.9954226[0m
+2025-12-23 06:08:27,156 - lightautoml.automl.blend - INFO - Blending: iteration [1m0[0m: score = [1m0.9959007[0m, weights = [1m[0.05281813 0.3157273  0.3157273  0.3157273 ][0m
+2025-12-23 06:08:27,633 - lightautoml.automl.blend - INFO - Blending: iteration [1m1[0m: score = [1m0.9959238[0m, weights = [1m[0.05019278 0.49374333 0.36589396 0.09016994][0m
+2025-12-23 06:08:28,185 - lightautoml.automl.blend - INFO - Blending: no improvements for score. Terminated.
+
+2025-12-23 06:08:28,187 - lightautoml.automl.blend - INFO - Blending: best score = [1m0.9959238[0m, best weights = [1m[0.05019278 0.49374333 0.36589396 0.09016994][0m
+2025-12-23 06:08:28,196 - lightautoml.automl.presets.base - INFO - [1mAutoml preset training completed in 288.52 seconds[0m
+
+2025-12-23 06:08:28,198 - lightautoml.automl.presets.base - INFO - Model description:
+Final prediction for new objects (level 0) = 
+	 0.05019 * (3 averaged models Lvl_0_Pipe_0_Mod_0_LinearL2) +
+	 0.49374 * (2 averaged models Lvl_0_Pipe_1_Mod_0_LightGBM) +
+	 0.36589 * (3 averaged models Lvl_0_Pipe_1_Mod_2_CatBoost) +
+	 0.09017 * (5 averaged models Lvl_0_Pipe_1_Mod_3_Tuned_CatBoost) 
+
+2025-12-23 06:08:28,199 - lightautoml.addons.utilization.utilization - INFO - ==================================================
+2025-12-23 06:08:28,201 - __main__ - INFO - Модель обучена успешно
+2025-12-23 06:08:28,221 - __main__ - INFO - Оценка модели на validation set
+2025-12-23 06:08:28,412 - __main__ - INFO - Уникальные классы в validation: ['e', 'p']
+2025-12-23 06:08:28,544 - __main__ - INFO - Кодировка классов: {np.str_('e'): 0, np.str_('p'): 1}
+2025-12-23 06:08:28,545 - __main__ - INFO - Пример кодировки: первые 10 значений: [0 0 0 0 0 0 1 0 0 0], оригинальные: ['e' 'e' 'e' 'e' 'e' 'e' 'p' 'e' 'e' 'e']
+2025-12-23 06:09:57,774 - __main__ - INFO - Формат предсказаний: shape=(623389, 1), type=<class 'numpy.ndarray'>
+2025-12-23 06:09:57,780 - __main__ - INFO - Распределение предсказанных классов (encoded): {np.int64(0): np.int64(339911), np.int64(1): np.int64(283478)}
+2025-12-23 06:09:57,781 - __main__ - INFO - Распределение истинных классов (encoded): {np.int64(0): np.int64(282310), np.int64(1): np.int64(341079)}
+2025-12-23 06:09:57,783 - __main__ - INFO - Средняя вероятность класса 1 ('p'): 0.4522
+2025-12-23 06:09:57,784 - __main__ - INFO - Min/Max вероятности: 0.0001 / 0.9992
+2025-12-23 06:09:57,797 - __main__ - INFO - Accuracy с оригинальными предсказаниями: 0.0114
+2025-12-23 06:09:57,798 - __main__ - INFO - Accuracy с инвертированными предсказаниями: 0.9886
+2025-12-23 06:09:57,799 - __main__ - INFO - accuracy: 0.9886 vs 0.0114
+2025-12-23 06:09:57,964 - __main__ - INFO - Метрики: {'accuracy': 0.9885625187483257, 'f1_score': 0.9885645158896336, 'roc_auc': 0.9962864195075565}
+2025-12-23 06:09:58,339 - __main__ - INFO - Модель сохранена в results/baseline/models/lama_config2.pkl
+2025-12-23 06:09:58,341 - __main__ - INFO - Метрики сохранены в results/baseline/03_lama_config2_metrics.txt
+2025-12-23 06:09:59,160 - __main__ - INFO - Предсказания сохранены в results/baseline/predictions/lama_config2_val.csv
+2025-12-23 06:09:59,252 - __main__ - INFO - Сравнение конфигураций
+2025-12-23 06:09:59,253 - __main__ - INFO - Лучшая конфигурация: config1
+2025-12-23 06:09:59,255 - __main__ - INFO - Отчет сравнения сохранен в results/baseline/04_baseline_comparison.txt
+2025-12-23 06:10:06,045 - __main__ - INFO - Полный train set загружен
+2025-12-23 06:10:06,047 - __main__ - INFO - Обучение финальной модели на полном train set (конфигурация: config1)
+2025-12-23 06:10:06,068 - __main__ - INFO - Начало обучения финальной модели...
+2025-12-23 06:10:06,071 - lightautoml.addons.utilization.utilization - INFO - Start automl [1mutilizator[0m with listed constraints:
+2025-12-23 06:10:06,073 - lightautoml.addons.utilization.utilization - INFO - - time: 600.00 seconds
+2025-12-23 06:10:06,074 - lightautoml.addons.utilization.utilization - INFO - - CPU: 4 cores
+2025-12-23 06:10:06,075 - lightautoml.addons.utilization.utilization - INFO - - memory: 16 GB
+
+2025-12-23 06:10:06,076 - lightautoml.addons.utilization.utilization - INFO - [1mIf one preset completes earlier, next preset configuration will be started[0m
+
+2025-12-23 06:10:06,077 - lightautoml.addons.utilization.utilization - INFO - ==================================================
+2025-12-23 06:10:06,078 - lightautoml.addons.utilization.utilization - INFO - Start 0 automl preset configuration:
+2025-12-23 06:10:06,079 - lightautoml.addons.utilization.utilization - INFO - [1mconf_0_sel_type_0.yml[0m, random state: {'reader_params': {'random_state': 42}, 'nn_params': {'random_state': 42}, 'general_params': {'return_all_predictions': False}}
+2025-12-23 06:10:06,092 - lightautoml.automl.presets.base - INFO - Stdout logging level is INFO.
+2025-12-23 06:10:06,102 - lightautoml.automl.presets.base - INFO - Task: binary
+
+2025-12-23 06:10:06,103 - lightautoml.automl.presets.base - INFO - Start automl preset with listed constraints:
+2025-12-23 06:10:06,105 - lightautoml.automl.presets.base - INFO - - time: 600.00 seconds
+2025-12-23 06:10:06,106 - lightautoml.automl.presets.base - INFO - - CPU: 4 cores
+2025-12-23 06:10:06,108 - lightautoml.automl.presets.base - INFO - - memory: 16 GB
+
+2025-12-23 06:10:06,109 - lightautoml.reader.base - INFO - [1mTrain data shape: (3116945, 22)[0m
+
+2025-12-23 06:10:22,876 - lightautoml.reader.base - INFO3 - Feats was rejected during automatic roles guess: []
+2025-12-23 06:10:24,099 - lightautoml.automl.base - INFO - Layer [1m1[0m train process start. Time left 582.01 secs
+2025-12-23 06:11:40,878 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m ...
+2025-12-23 06:11:40,897 - lightautoml.ml_algo.base - DEBUG - Training params: {'tol': 1e-06, 'max_iter': 100, 'cs': [1e-05, 5e-05, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100, 500, 1000, 5000, 10000, 50000, 100000], 'early_stopping': 2, 'categorical_idx': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 'embed_sizes': array([13,  8, 13,  9, 13,  5,  9, 10,  5,  9, 14, 10,  8,  3],
+      dtype=int32), 'data_size': 33}
+2025-12-23 06:11:41,299 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m =====
+2025-12-23 06:11:55,268 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 1e-05 score = 0.8998736933438319
+2025-12-23 06:12:05,489 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 5e-05 score = 0.9262200664244612
+2025-12-23 06:12:16,123 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0001 score = 0.9333356801551289
+2025-12-23 06:12:30,631 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.0005 score = 0.9435583462764178
+2025-12-23 06:12:46,879 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.001 score = 0.946059686750592
+2025-12-23 06:13:05,866 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.005 score = 0.9491758210748156
+2025-12-23 06:13:06,241 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.01 score = 0.9491758210748156
+2025-12-23 06:13:06,612 - lightautoml.ml_algo.torch_based.linear_model - INFO3 - Linear model: C = 0.05 score = 0.9491758210748156
+2025-12-23 06:13:06,808 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 0
+
+2025-12-23 06:13:06,973 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m finished. score = [1m0.9491758210748156[0m
+2025-12-23 06:13:06,975 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_0_Mod_0_LinearL2[0m fitting and predicting completed
+2025-12-23 06:13:06,983 - lightautoml.automl.base - INFO - Time left 419.12 secs
+
+2025-12-23 06:15:11,112 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m ...
+2025-12-23 06:15:11,116 - lightautoml.ml_algo.base - DEBUG - Training params: {'task': 'train', 'learning_rate': 0.05, 'num_leaves': 244, 'feature_fraction': 0.7, 'bagging_fraction': 0.7, 'bagging_freq': 1, 'max_depth': -1, 'verbosity': -1, 'reg_alpha': 1, 'reg_lambda': 0.0, 'min_split_gain': 0.0, 'zero_as_missing': False, 'num_threads': 4, 'max_bin': 255, 'min_data_in_bin': 3, 'num_trees': 2000, 'early_stopping_rounds': 100, 'random_state': 42, 'verbose_eval': 100}
+2025-12-23 06:15:11,424 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m =====
+2025-12-23 06:15:13,613 - lightautoml.ml_algo.boost_lgbm - INFO3 - Training until validation scores don't improve for 100 rounds
+2025-12-23 06:15:45,720 - lightautoml.ml_algo.boost_lgbm - INFO3 - [100]	valid's auc: 0.996581
+2025-12-23 06:16:17,446 - lightautoml.ml_algo.boost_lgbm - INFO3 - [200]	valid's auc: 0.996974
+2025-12-23 06:16:39,600 - lightautoml.ml_algo.boost_lgbm - INFO3 - [300]	valid's auc: 0.997006
+2025-12-23 06:16:57,841 - lightautoml.ml_algo.boost_lgbm - INFO3 - [400]	valid's auc: 0.996993
+2025-12-23 06:17:00,111 - lightautoml.ml_algo.boost_lgbm - INFO3 - Early stopping, best iteration is:
+[311]	valid's auc: 0.997011
+2025-12-23 06:17:07,909 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 0
+
+2025-12-23 06:17:08,065 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m finished. score = [1m0.9970111993283843[0m
+2025-12-23 06:17:08,067 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_1_Mod_0_LightGBM[0m fitting and predicting completed
+2025-12-23 06:17:08,267 - lightautoml.ml_algo.base - INFO - Start fitting [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m ...
+2025-12-23 06:17:08,269 - lightautoml.ml_algo.base - DEBUG - Training params: {'task_type': 'CPU', 'thread_count': 4, 'random_seed': 42, 'num_trees': 3000, 'learning_rate': 0.05, 'l2_leaf_reg': 0.01, 'bootstrap_type': 'Bernoulli', 'grow_policy': 'SymmetricTree', 'max_depth': 5, 'min_data_in_leaf': 1, 'one_hot_max_size': 10, 'fold_permutation_block': 1, 'boosting_type': 'Plain', 'boost_from_average': True, 'od_type': 'Iter', 'od_wait': 100, 'max_bin': 32, 'feature_border_type': 'GreedyLogSum', 'nan_mode': 'Min', 'verbose': 100, 'allow_writing_files': False, 'verbose_eval': 100}
+2025-12-23 06:17:08,574 - lightautoml.ml_algo.base - INFO2 - ===== Start working with [1mfold 0[0m for [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m =====
+2025-12-23 06:17:10,580 - lightautoml.ml_algo.boost_cb - INFO3 - 0:	test: 0.8193371	best: 0.8193371 (0)	total: 245ms	remaining: 12m 15s
+2025-12-23 06:17:31,709 - lightautoml.ml_algo.boost_cb - INFO3 - 100:	test: 0.9861473	best: 0.9861473 (100)	total: 22.3s	remaining: 10m 39s
+2025-12-23 06:17:53,923 - lightautoml.ml_algo.boost_cb - INFO3 - 200:	test: 0.9939560	best: 0.9939560 (200)	total: 44.1s	remaining: 10m 13s
+2025-12-23 06:18:14,408 - lightautoml.ml_algo.boost_cb - INFO3 - 300:	test: 0.9953412	best: 0.9953412 (300)	total: 1m 5s	remaining: 9m 46s
+2025-12-23 06:18:35,399 - lightautoml.ml_algo.boost_cb - INFO3 - 400:	test: 0.9957389	best: 0.9957389 (400)	total: 1m 27s	remaining: 9m 25s
+2025-12-23 06:18:57,276 - lightautoml.ml_algo.boost_cb - INFO3 - 500:	test: 0.9959275	best: 0.9959275 (500)	total: 1m 48s	remaining: 9m 2s
+2025-12-23 06:19:17,965 - lightautoml.ml_algo.boost_cb - INFO3 - 600:	test: 0.9960894	best: 0.9960904 (598)	total: 2m 10s	remaining: 8m 39s
+2025-12-23 06:19:37,960 - lightautoml.ml_algo.boost_cb - INFO3 - 700:	test: 0.9961901	best: 0.9961901 (700)	total: 2m 31s	remaining: 8m 15s
+2025-12-23 06:19:59,372 - lightautoml.ml_algo.boost_cb - INFO3 - 800:	test: 0.9962663	best: 0.9962663 (800)	total: 2m 52s	remaining: 7m 52s
+2025-12-23 06:20:19,497 - lightautoml.ml_algo.boost_cb - INFO3 - 900:	test: 0.9963343	best: 0.9963343 (900)	total: 3m 13s	remaining: 7m 30s
+2025-12-23 06:20:40,107 - lightautoml.ml_algo.boost_cb - INFO3 - 1000:	test: 0.9963844	best: 0.9963844 (1000)	total: 3m 34s	remaining: 7m 8s
+2025-12-23 06:21:01,435 - lightautoml.ml_algo.boost_cb - INFO3 - 1100:	test: 0.9964358	best: 0.9964358 (1099)	total: 3m 55s	remaining: 6m 46s
+2025-12-23 06:21:21,429 - lightautoml.ml_algo.boost_cb - INFO3 - 1200:	test: 0.9964784	best: 0.9964784 (1200)	total: 4m 16s	remaining: 6m 24s
+2025-12-23 06:21:41,268 - lightautoml.ml_algo.boost_cb - INFO3 - 1300:	test: 0.9965140	best: 0.9965140 (1300)	total: 4m 37s	remaining: 6m 1s
+2025-12-23 06:22:02,690 - lightautoml.ml_algo.boost_cb - INFO3 - 1400:	test: 0.9965338	best: 0.9965339 (1399)	total: 4m 58s	remaining: 5m 40s
+2025-12-23 06:22:22,519 - lightautoml.ml_algo.boost_cb - INFO3 - 1500:	test: 0.9965575	best: 0.9965575 (1500)	total: 5m 18s	remaining: 5m 18s
+2025-12-23 06:22:42,120 - lightautoml.ml_algo.boost_cb - INFO3 - 1600:	test: 0.9965818	best: 0.9965820 (1598)	total: 5m 39s	remaining: 4m 56s
+2025-12-23 06:23:03,121 - lightautoml.ml_algo.boost_cb - INFO3 - 1700:	test: 0.9966025	best: 0.9966025 (1700)	total: 6m	remaining: 4m 34s
+2025-12-23 06:23:22,823 - lightautoml.ml_algo.boost_cb - INFO3 - 1800:	test: 0.9966179	best: 0.9966179 (1800)	total: 6m 20s	remaining: 4m 13s
+2025-12-23 06:23:45,027 - lightautoml.ml_algo.boost_cb - INFO3 - 1900:	test: 0.9966323	best: 0.9966323 (1900)	total: 6m 43s	remaining: 3m 53s
+2025-12-23 06:24:09,315 - lightautoml.ml_algo.boost_cb - INFO3 - 2000:	test: 0.9966464	best: 0.9966464 (2000)	total: 7m 7s	remaining: 3m 33s
+2025-12-23 06:24:32,446 - lightautoml.ml_algo.boost_cb - INFO3 - 2100:	test: 0.9966621	best: 0.9966621 (2100)	total: 7m 30s	remaining: 3m 12s
+2025-12-23 06:24:51,849 - lightautoml.ml_algo.boost_cb - INFO3 - 2200:	test: 0.9966747	best: 0.9966747 (2200)	total: 7m 50s	remaining: 2m 50s
+2025-12-23 06:25:10,337 - lightautoml.ml_algo.boost_cb - INFO3 - 2300:	test: 0.9966909	best: 0.9966909 (2298)	total: 8m 10s	remaining: 2m 28s
+2025-12-23 06:25:28,345 - lightautoml.ml_algo.boost_cb - INFO3 - 2400:	test: 0.9967031	best: 0.9967031 (2400)	total: 8m 28s	remaining: 2m 6s
+2025-12-23 06:25:45,198 - lightautoml.ml_algo.boost_cb - INFO3 - 2500:	test: 0.9967120	best: 0.9967121 (2497)	total: 8m 46s	remaining: 1m 45s
+2025-12-23 06:26:03,982 - lightautoml.ml_algo.boost_cb - INFO3 - 2600:	test: 0.9967209	best: 0.9967209 (2600)	total: 9m 5s	remaining: 1m 23s
+2025-12-23 06:26:24,119 - lightautoml.ml_algo.boost_cb - INFO3 - 2700:	test: 0.9967308	best: 0.9967308 (2700)	total: 9m 25s	remaining: 1m 2s
+2025-12-23 06:26:43,790 - lightautoml.ml_algo.boost_cb - INFO3 - 2800:	test: 0.9967391	best: 0.9967391 (2800)	total: 9m 46s	remaining: 41.7s
+2025-12-23 06:27:01,551 - lightautoml.ml_algo.boost_cb - INFO3 - 2900:	test: 0.9967464	best: 0.9967464 (2899)	total: 10m 4s	remaining: 20.6s
+2025-12-23 06:27:17,871 - lightautoml.ml_algo.boost_cb - INFO3 - 2999:	test: 0.9967517	best: 0.9967525 (2978)	total: 10m 20s	remaining: 0us
+2025-12-23 06:27:17,873 - lightautoml.ml_algo.boost_cb - INFO3 - bestTest = 0.9967524703
+2025-12-23 06:27:17,874 - lightautoml.ml_algo.boost_cb - INFO3 - bestIteration = 2978
+2025-12-23 06:27:17,877 - lightautoml.ml_algo.boost_cb - INFO3 - Shrink model to first 2979 iterations.
+2025-12-23 06:27:18,311 - lightautoml.ml_algo.base - INFO - Time limit exceeded after calculating fold 0
+
+2025-12-23 06:27:18,465 - lightautoml.ml_algo.base - INFO - Fitting [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m finished. score = [1m0.9967524702986981[0m
+2025-12-23 06:27:18,468 - lightautoml.ml_algo.base - INFO - [1mLvl_0_Pipe_1_Mod_2_CatBoost[0m fitting and predicting completed
+2025-12-23 06:27:18,481 - lightautoml.automl.base - INFO - Time left -432.38 secs
+
+2025-12-23 06:27:18,484 - lightautoml.automl.base - INFO - Time limit exceeded. Last level models will be blended and unused pipelines will be pruned.
+
+2025-12-23 06:27:18,485 - lightautoml.automl.base - INFO - [1mLayer 1 training completed.[0m
+
+2025-12-23 06:27:18,701 - lightautoml.automl.blend - INFO - Blending: optimization starts with equal weights. Score = [1m0.9959917[0m
+2025-12-23 06:27:22,865 - lightautoml.automl.blend - INFO - Blending: iteration [1m0[0m: score = [1m0.9970380[0m, weights = [1m[0.         0.81945497 0.18054509][0m
+2025-12-23 06:27:27,070 - lightautoml.automl.blend - INFO - Blending: no improvements for score. Terminated.
+
+2025-12-23 06:27:27,072 - lightautoml.automl.blend - INFO - Blending: best score = [1m0.9970380[0m, best weights = [1m[0.         0.81945497 0.18054509][0m
+2025-12-23 06:27:27,271 - lightautoml.automl.presets.base - INFO - [1mAutoml preset training completed in 1041.16 seconds[0m
+
+2025-12-23 06:27:27,273 - lightautoml.automl.presets.base - INFO - Model description:
+Final prediction for new objects (level 0) = 
+	 0.81945 * (1 averaged models Lvl_0_Pipe_1_Mod_0_LightGBM) +
+	 0.18055 * (1 averaged models Lvl_0_Pipe_1_Mod_2_CatBoost) 
+
+2025-12-23 06:27:27,275 - lightautoml.addons.utilization.utilization - INFO - ==================================================
+2025-12-23 06:27:27,278 - __main__ - INFO - Финальная модель обучена успешно
+2025-12-23 06:27:27,909 - __main__ - INFO - Финальная модель сохранена в results/baseline/models/lama_final.pkl
+2025-12-23 06:27:32,826 - __main__ - INFO - Test set загружен: (2077964, 21)
+2025-12-23 06:27:32,828 - __main__ - INFO - Создание submission файла
+2025-12-23 06:28:31,492 - __main__ - INFO - Submission файл сохранен в results/baseline/submissions/lama_best_submission.csv
+2025-12-23 06:28:38,894 - __main__ - INFO - Train загружен: (3116945, 22)
+2025-12-23 06:28:38,895 - __main__ - INFO - Test загружен: (2077964, 21)
+2025-12-23 06:28:39,327 - __main__ - INFO - Проверка временных зависимостей
+2025-12-23 06:28:39,465 - __main__ - INFO - ID последовательные: 0 - 3116944
+2025-12-23 06:28:39,466 - __main__ - INFO - Проверка зависимости от ID
+2025-12-23 06:28:39,793 - __main__ - INFO - Train ID range: (np.int64(0), np.int64(3116944))
+2025-12-23 06:28:39,794 - __main__ - INFO - Test ID range: (np.int64(3116945), np.int64(5194908))
+2025-12-23 06:28:39,795 - __main__ - INFO - ID overlap: 0
+2025-12-23 06:28:39,836 - __main__ - INFO - Проверка распределения признаков между train и test
+2025-12-23 06:28:41,052 - __main__ - INFO - Создание split: train/val = 80%/20%
+2025-12-23 06:28:42,944 - __main__ - INFO - Train indices: 2493556
+2025-12-23 06:28:42,945 - __main__ - INFO - Val indices: 623389
+2025-12-23 06:28:42,999 - __main__ - INFO - Индексы сохранены в results/models/data
+2025-12-23 06:28:43,001 - __main__ - INFO - Обоснование сохранено в results/models/01_split_strategy_justification.txt
+2025-12-23 06:28:47,021 - __main__ - INFO - Train split: (10000, 22)
+2025-12-23 06:28:47,023 - __main__ - INFO - Val split: (1000, 22)
+2025-12-23 06:28:48,589 - __main__ - INFO - Создание Pipeline v1
+2025-12-23 06:28:48,598 - __main__ - INFO - Обучение pipeline
+2025-12-23 06:28:48,981 - __main__ - INFO - Pipeline обучен
+2025-12-23 06:28:48,983 - __main__ - INFO - Оценка pipeline на validation set
+2025-12-23 06:28:49,110 - __main__ - INFO - Метрики: {'accuracy': 0.935, 'f1_score': 0.9350258362439988, 'roc_auc': 0.9847161572052402}
+2025-12-23 06:28:49,204 - __main__ - INFO - Pipeline сохранен в results/models/pipelines/pipeline_v1.pkl
+2025-12-23 06:28:49,206 - __main__ - INFO - Метрики сохранены в results/models/02_pipeline_v1_metrics.txt
+2025-12-23 06:28:49,211 - __main__ - INFO - Предсказания сохранены в results/models/predictions/pipeline_v1_val.csv
+2025-12-23 06:28:49,213 - __main__ - INFO - Важность признаков сохранена в results/models/feature_importance/pipeline_v1_importance.csv
+2025-12-23 06:28:54,018 - __main__ - INFO - Данные загружены: X_train=(10000, 144), X_val=(1000, 144)
+2025-12-23 06:28:54,970 - __main__ - INFO - Начало оптимизации гиперпараметров (n_trials=50)
+2025-12-23 06:29:20,303 - __main__ - INFO - Оптимизация завершена. Лучший score: 0.998038
+2025-12-23 06:29:20,304 - __main__ - INFO - Лучшие параметры: {'n_features': 80, 'n_estimators': 150, 'max_depth': 19, 'min_samples_split': 4, 'min_samples_leaf': 2, 'max_features': 'sqrt'}
+2025-12-23 06:29:20,305 - __main__ - INFO - Обучение модели с оптимизированными параметрами
+2025-12-23 06:29:20,679 - __main__ - INFO - Модель обучена
+2025-12-23 06:29:20,680 - __main__ - INFO - Оценка оптимизированной модели
+2025-12-23 06:29:20,808 - __main__ - INFO - Метрики: {'accuracy': 0.986, 'f1_score': 0.986, 'roc_auc': 0.9979777308690116}
+2025-12-23 06:29:20,811 - __main__ - INFO - Лучшие параметры сохранены в results/models/03_best_params_v1.json
+2025-12-23 06:29:20,859 - __main__ - INFO - История оптимизации сохранена в results/models/03_optuna_history_v1.csv
+2025-12-23 06:29:20,910 - __main__ - INFO - Модель сохранена в results/models/models/model_v1_optimized.pkl
+2025-12-23 06:29:20,912 - __main__ - INFO - Метрики сохранены в results/models/03_hyperopt_v1_metrics.txt
+2025-12-23 06:29:20,917 - __main__ - INFO - Предсказания сохранены в results/models/predictions/model_v1_optimized_val.csv
+2025-12-23 06:29:25,221 - __main__ - INFO - Train split: (10000, 22)
+2025-12-23 06:29:25,222 - __main__ - INFO - Val split: (1000, 22)
+2025-12-23 06:29:25,345 - __main__ - INFO - Численных признаков: 3
+2025-12-23 06:29:25,346 - __main__ - INFO - Категориальных признаков: 17
+2025-12-23 06:29:25,346 - __main__ - INFO - Предобработка данных (альтернативный подход v2)
+2025-12-23 06:29:25,502 - __main__ - INFO - X_train_processed: (10000, 20)
+2025-12-23 06:29:25,503 - __main__ - INFO - X_val_processed: (1000, 20)
+2025-12-23 06:29:25,505 - __main__ - INFO - Создание Pipeline v2 с LightGBM
+2025-12-23 06:29:25,900 - __main__ - INFO - Обучение Pipeline v2
+2025-12-23 06:29:26,187 - __main__ - INFO - Pipeline v2 обучен
+2025-12-23 06:29:26,188 - __main__ - INFO - Оценка Pipeline v2 на validation set
+2025-12-23 06:29:26,202 - __main__ - INFO - Метрики: {'accuracy': 0.991, 'f1_score': 0.9910007521817803, 'roc_auc': 0.996700720282312}
+2025-12-23 06:29:26,215 - __main__ - INFO - Pipeline сохранен в results/models/pipelines/pipeline_v2.pkl
+2025-12-23 06:29:26,217 - __main__ - INFO - Метрики сохранены в results/models/04_pipeline_v2_metrics.txt
+2025-12-23 06:29:26,221 - __main__ - INFO - Предсказания сохранены в results/models/predictions/pipeline_v2_val.csv
+2025-12-23 06:29:26,223 - __main__ - INFO - Важность признаков сохранена в results/models/feature_importance/pipeline_v2_importance.csv
+2025-12-23 06:29:26,278 - __main__ - INFO - Сравнение всех моделей
+2025-12-23 06:29:26,280 - __main__ - INFO - 
+Сравнение моделей:
+2025-12-23 06:29:26,295 - __main__ - INFO -                    model   roc_auc  accuracy  f1_score
+3  pipeline_v1_optimized  0.997978  0.986000  0.986000
+4            pipeline_v2  0.996701  0.991000  0.991001
+0           lama_config1  0.996311  0.988700  0.988702
+1           lama_config2  0.996286  0.988563  0.988565
+2            pipeline_v1  0.984716  0.935000  0.935026
+2025-12-23 06:29:26,296 - __main__ - INFO - 
+Лучшая модель: pipeline_v1_optimized
+2025-12-23 06:29:26,297 - __main__ - INFO - ROC-AUC лучшей модели: 0.997978
+2025-12-23 06:29:26,298 - __main__ - INFO - ROC-AUC baseline: 0.000000
+2025-12-23 06:29:26,298 - __main__ - INFO - Превосходит baseline: True
+2025-12-23 06:29:26,303 - __main__ - INFO - Отчет сравнения сохранен в results/models/07_models_comparison.txt
+2025-12-23 06:29:26,420 - __main__ - INFO - Параметры загружены из results/models/03_best_params_v1.json
+2025-12-23 06:29:26,422 - __main__ - INFO - Лучшие параметры: {'n_features': 80, 'n_estimators': 150, 'max_depth': 19, 'min_samples_split': 4, 'min_samples_leaf': 2, 'max_features': 'sqrt'}
+2025-12-23 06:29:32,936 - __main__ - INFO - Train set: (3116945, 22)
+2025-12-23 06:29:32,938 - __main__ - INFO - Test set: (2077964, 21)
+2025-12-23 06:29:33,071 - __main__ - INFO - Численных признаков: 3
+2025-12-23 06:29:33,073 - __main__ - INFO - Категориальных признаков: 17
+2025-12-23 06:29:33,074 - __main__ - INFO - Предобработка данных
+2025-12-23 06:29:33,156 - __main__ - INFO - X_train_processed: (10000, 146)
+2025-12-23 06:29:33,157 - __main__ - INFO - X_test_processed: (1000, 146)
+2025-12-23 06:29:33,159 - __main__ - INFO - Обучение модели с лучшими параметрами из Optuna
+2025-12-23 06:29:33,160 - __main__ - INFO - Параметры модели:
+2025-12-23 06:29:33,161 - __main__ - INFO -   - n_features (SelectKBest): 80
+2025-12-23 06:29:33,161 - __main__ - INFO -   - n_estimators: 150
+2025-12-23 06:29:33,162 - __main__ - INFO -   - max_depth: 19
+2025-12-23 06:29:33,163 - __main__ - INFO -   - min_samples_split: 4
+2025-12-23 06:29:33,163 - __main__ - INFO -   - min_samples_leaf: 2
+2025-12-23 06:29:33,164 - __main__ - INFO -   - max_features: sqrt
+2025-12-23 06:29:33,164 - __main__ - INFO - Начало обучения...
+2025-12-23 06:29:33,597 - __main__ - INFO - Модель обучена успешно
+2025-12-23 06:29:33,657 - __main__ - INFO - Pipeline сохранен в results/models/pipelines/optuna_best_pipeline.pkl
+2025-12-23 06:29:33,712 - __main__ - INFO - Модель сохранена в results/models/optuna_best_model_full.pkl
+2025-12-23 06:29:33,714 - __main__ - INFO - Создание submission файла
+2025-12-23 06:29:33,845 - __main__ - INFO - Submission файл сохранен в results/submissions/optuna_best_full_submission.csv
+2025-12-23 06:29:33,846 - __main__ - INFO - Размер submission: (1000, 2)
+2025-12-23 06:29:33,848 - __main__ - INFO - Распределение классов: {'p': 508, 'e': 492}
+2025-12-23 06:29:33,851 - __main__ - INFO - Отчет сохранен в results/models/09_optuna_best_full_report.txt

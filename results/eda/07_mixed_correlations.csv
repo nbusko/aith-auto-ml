@@ -1,0 +1,16 @@
+numeric_feature,categorical_feature,f_statistic,p_value
+cap-diameter,cap-shape,450.58228191522124,0.0
+cap-diameter,cap-surface,361.20942971566063,0.0
+cap-diameter,cap-color,40.149757751602664,2.750268247425962e-110
+cap-diameter,does-bruise-or-bleed,1671.0068872198462,0.0
+cap-diameter,gill-attachment,452.32362984643817,0.0
+stem-height,cap-shape,397.66268699361024,0.0
+stem-height,cap-surface,340.863973312086,0.0
+stem-height,cap-color,110.2018410614025,2.7347118e-316
+stem-height,does-bruise-or-bleed,421.71203601574115,2.401229683285991e-182
+stem-height,gill-attachment,751.4855255055476,0.0
+stem-width,cap-shape,670.7526605298661,0.0
+stem-width,cap-surface,545.6466326957272,0.0
+stem-width,cap-color,45.292123030950215,1.9969849650931438e-125
+stem-width,does-bruise-or-bleed,2054.0257548521427,0.0
+stem-width,gill-attachment,747.081013711014,0.0

@@ -1,0 +1,33 @@
+============================================================
+ОТЧЕТ О ВАЖНОСТИ ПРИЗНАКОВ
+============================================================
+
+ЧИСЛЕННЫЕ ПРИЗНАКИ:
+  Всего: 3
+
+  Топ-5 по важности:
+    - stem-width: corr=0.166, MI=0.065, combined=0.231
+    - cap-diameter: corr=0.158, MI=0.044, combined=0.202
+    - stem-height: corr=0.053, MI=0.037, combined=0.090
+
+КАТЕГОРИАЛЬНЫЕ ПРИЗНАКИ:
+  Всего: 17
+
+  Топ-5 по важности:
+    - stem-root: chi2=0.287, MI=0.025, combined=0.313
+    - veil-color: chi2=0.241, MI=0.024, combined=0.265
+    - spore-print-color: chi2=0.166, MI=0.020, combined=0.185
+    - stem-surface: chi2=0.135, MI=0.034, combined=0.170
+    - cap-surface: chi2=0.080, MI=0.034, combined=0.114
+
+ОБЩИЙ РЕЙТИНГ (топ-10):
+  1. stem-width (numeric): 1.000
+  2. stem-root (categorical): 1.000
+  3. cap-diameter (numeric): 0.875
+  4. veil-color (categorical): 0.848
+  5. spore-print-color (categorical): 0.593
+  6. stem-surface (categorical): 0.543
+  7. stem-height (numeric): 0.389
+  8. cap-surface (categorical): 0.365
+  9. cap-color (categorical): 0.345
+  10. stem-color (categorical): 0.336

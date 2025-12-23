@@ -1,0 +1,319 @@
+============================================================
+ПЕРВИЧНЫЙ ПРОСМОТР ДАННЫХ
+============================================================
+
+============================================================
+Информация о датасете: train.csv
+============================================================
+
+Размер датасета: 3116945 строк, 22 столбцов
+
+Типы данных:
+id                        int64
+class                    object
+cap-diameter            float64
+cap-shape                object
+cap-surface              object
+cap-color                object
+does-bruise-or-bleed     object
+gill-attachment          object
+gill-spacing             object
+gill-color               object
+stem-height             float64
+stem-width              float64
+stem-root                object
+stem-surface             object
+stem-color               object
+veil-type                object
+veil-color               object
+has-ring                 object
+ring-type                object
+spore-print-color        object
+habitat                  object
+season                   object
+dtype: object
+
+Первые 5 строк:
+   id class  cap-diameter cap-shape cap-surface cap-color  \
+0   0     e          8.80         f           s         u   
+1   1     p          4.51         x           h         o   
+2   2     e          6.94         f           s         b   
+3   3     e          3.88         f           y         g   
+4   4     e          5.85         x           l         w   
+
+  does-bruise-or-bleed gill-attachment gill-spacing gill-color  ...  \
+0                    f               a            c          w  ...   
+1                    f               a            c          n  ...   
+2                    f               x            c          w  ...   
+3                    f               s          NaN          g  ...   
+4                    f               d          NaN          w  ...   
+
+   stem-root  stem-surface stem-color veil-type veil-color has-ring ring-type  \
+0        NaN           NaN          w       NaN        NaN        f         f   
+1        NaN             y          o       NaN        NaN        t         z   
+2        NaN             s          n       NaN        NaN        f         f   
+3        NaN           NaN          w       NaN        NaN        f         f   
+4        NaN           NaN          w       NaN        NaN        f         f   
+
+  spore-print-color habitat season  
+0               NaN       d      a  
+1               NaN       d      w  
+2               NaN       l      w  
+3               NaN       d      u  
+4               NaN       g      a  
+
+[5 rows x 22 columns]
+
+Базовая статистика (describe):
+                  id    class  cap-diameter cap-shape cap-surface cap-color  \
+count   3.116945e+06  3116945  3.116941e+06   3116905     2445922   3116933   
+unique           NaN        2           NaN        74          83        78   
+top              NaN        p           NaN         x           t         n   
+freq             NaN  1705396           NaN   1436026      460777   1359542   
+mean    1.558472e+06      NaN  6.309848e+00       NaN         NaN       NaN   
+std     8.997847e+05      NaN  4.657931e+00       NaN         NaN       NaN   
+min     0.000000e+00      NaN  3.000000e-02       NaN         NaN       NaN   
+25%     7.792360e+05      NaN  3.320000e+00       NaN         NaN       NaN   
+50%     1.558472e+06      NaN  5.750000e+00       NaN         NaN       NaN   
+75%     2.337708e+06      NaN  8.240000e+00       NaN         NaN       NaN   
+max     3.116944e+06      NaN  8.067000e+01       NaN         NaN       NaN   
+
+       does-bruise-or-bleed gill-attachment gill-spacing gill-color  ...  \
+count               3116937         2593009      1858510    3116888  ...   
+unique                   26              78           48         63  ...   
+top                       f               a            c          w  ...   
+freq                2569743          646034      1331054     931538  ...   
+mean                    NaN             NaN          NaN        NaN  ...   
+std                     NaN             NaN          NaN        NaN  ...   
+min                     NaN             NaN          NaN        NaN  ...   
+25%                     NaN             NaN          NaN        NaN  ...   
+50%                     NaN             NaN          NaN        NaN  ...   
+75%                     NaN             NaN          NaN        NaN  ...   
+max                     NaN             NaN          NaN        NaN  ...   
+
+        stem-root  stem-surface stem-color veil-type veil-color has-ring  \
+count      359922       1136084    3116907    159452     375998  3116921   
+unique         38            60         59        22         24       23   
+top             b             s          w         u          w        f   
+freq       165801        327610    1196637    159373     279070  2368820   
+mean          NaN           NaN        NaN       NaN        NaN      NaN   
+std           NaN           NaN        NaN       NaN        NaN      NaN   
+min           NaN           NaN        NaN       NaN        NaN      NaN   
+25%           NaN           NaN        NaN       NaN        NaN      NaN   
+50%           NaN           NaN        NaN       NaN        NaN      NaN   
+75%           NaN           NaN        NaN       NaN        NaN      NaN   
+max           NaN           NaN        NaN       NaN        NaN      NaN   
+
+       ring-type spore-print-color  habitat   season  
+count    2988065            267263  3116900  3116945  
+unique        40                32       52        4  
+top            f                 k        d        a  
+freq     2477170            107310  2177573  1543321  
+mean         NaN               NaN      NaN      NaN  
+std          NaN               NaN      NaN      NaN  
+min          NaN               NaN      NaN      NaN  
+25%          NaN               NaN      NaN      NaN  
+50%          NaN               NaN      NaN      NaN  
+75%          NaN               NaN      NaN      NaN  
+max          NaN               NaN      NaN      NaN  
+
+[11 rows x 22 columns]
+
+Информация о пропущенных значениях:
+cap-diameter                  4
+cap-shape                    40
+cap-surface              671023
+cap-color                    12
+does-bruise-or-bleed          8
+gill-attachment          523936
+gill-spacing            1258435
+gill-color                   57
+stem-root               2757023
+stem-surface            1980861
+stem-color                   38
+veil-type               2957493
+veil-color              2740947
+has-ring                     24
+ring-type                128880
+spore-print-color       2849682
+habitat                      45
+dtype: int64
+
+Количество дубликатов: 0
+
+============================================================
+Информация о датасете: test.csv
+============================================================
+
+Размер датасета: 2077964 строк, 21 столбцов
+
+Типы данных:
+id                        int64
+cap-diameter            float64
+cap-shape                object
+cap-surface              object
+cap-color                object
+does-bruise-or-bleed     object
+gill-attachment          object
+gill-spacing             object
+gill-color               object
+stem-height             float64
+stem-width              float64
+stem-root                object
+stem-surface             object
+stem-color               object
+veil-type                object
+veil-color               object
+has-ring                 object
+ring-type                object
+spore-print-color        object
+habitat                  object
+season                   object
+dtype: object
+
+Первые 5 строк:
+        id  cap-diameter cap-shape cap-surface cap-color does-bruise-or-bleed  \
+0  3116945          8.64         x         NaN         n                    t   
+1  3116946          6.90         o           t         o                    f   
+2  3116947          2.00         b           g         n                    f   
+3  3116948          3.47         x           t         n                    f   
+4  3116949          6.17         x           h         y                    f   
+
+  gill-attachment gill-spacing gill-color  stem-height  ...  stem-root  \
+0             NaN          NaN          w        11.13  ...          b   
+1             NaN            c          y         1.27  ...        NaN   
+2             NaN            c          n         6.18  ...        NaN   
+3               s            c          n         4.98  ...        NaN   
+4               p          NaN          y         6.73  ...        NaN   
+
+  stem-surface stem-color veil-type veil-color has-ring ring-type  \
+0          NaN          w         u          w        t         g   
+1          NaN          n       NaN        NaN        f         f   
+2          NaN          n       NaN        NaN        f         f   
+3          NaN          w       NaN          n        t         z   
+4          NaN          y       NaN          y        t       NaN   
+
+  spore-print-color habitat season  
+0               NaN       d      a  
+1               NaN       d      a  
+2               NaN       d      s  
+3               NaN       d      u  
+4               NaN       d      u  
+
+[5 rows x 21 columns]
+
+Базовая статистика (describe):
+                  id  cap-diameter cap-shape cap-surface cap-color  \
+count   2.077964e+06  2.077957e+06   2077933     1631060   2077951   
+unique           NaN           NaN        62          59        57   
+top              NaN           NaN         x           t         n   
+freq             NaN           NaN    957949      306852    904307   
+mean    4.155926e+06  6.306192e+00       NaN         NaN       NaN   
+std     5.998567e+05  4.685462e+00       NaN         NaN       NaN   
+min     3.116945e+06  0.000000e+00       NaN         NaN       NaN   
+25%     3.636436e+06  3.310000e+00       NaN         NaN       NaN   
+50%     4.155926e+06  5.740000e+00       NaN         NaN       NaN   
+75%     4.675417e+06  8.230000e+00       NaN         NaN       NaN   
+max     5.194908e+06  6.070000e+02       NaN         NaN       NaN   
+
+       does-bruise-or-bleed gill-attachment gill-spacing gill-color  \
+count               2077954         1728143      1238369    2077915   
+unique                   22              66           35         56   
+top                       f               a            c          w   
+freq                1713662          430960       886976     620773   
+mean                    NaN             NaN          NaN        NaN   
+std                     NaN             NaN          NaN        NaN   
+min                     NaN             NaN          NaN        NaN   
+25%                     NaN             NaN          NaN        NaN   
+50%                     NaN             NaN          NaN        NaN   
+75%                     NaN             NaN          NaN        NaN   
+max                     NaN             NaN          NaN        NaN   
+
+         stem-height  ...  stem-root stem-surface stem-color veil-type  \
+count   2.077963e+06  ...     239952       756476    2077943    106419   
+unique           NaN  ...         31           54         55        15   
+top              NaN  ...          b            s          w         u   
+freq             NaN  ...     110581       218496     797365    106373   
+mean    6.346509e+00  ...        NaN          NaN        NaN       NaN   
+std     2.698978e+00  ...        NaN          NaN        NaN       NaN   
+min     0.000000e+00  ...        NaN          NaN        NaN       NaN   
+25%     4.670000e+00  ...        NaN          NaN        NaN       NaN   
+50%     5.880000e+00  ...        NaN          NaN        NaN       NaN   
+75%     7.410000e+00  ...        NaN          NaN        NaN       NaN   
+max     5.729000e+01  ...        NaN          NaN        NaN       NaN   
+
+       veil-color has-ring ring-type spore-print-color  habitat   season  
+count      251840  2077945   1991769            178347  2077939  2077964  
+unique         23       23        36                33       39        4  
+top             w        f         f                 k        d        a  
+freq       186432  1578092   1650200             71573  1450420  1029085  
+mean          NaN      NaN       NaN               NaN      NaN      NaN  
+std           NaN      NaN       NaN               NaN      NaN      NaN  
+min           NaN      NaN       NaN               NaN      NaN      NaN  
+25%           NaN      NaN       NaN               NaN      NaN      NaN  
+50%           NaN      NaN       NaN               NaN      NaN      NaN  
+75%           NaN      NaN       NaN               NaN      NaN      NaN  
+max           NaN      NaN       NaN               NaN      NaN      NaN  
+
+[11 rows x 21 columns]
+
+Информация о пропущенных значениях:
+cap-diameter                  7
+cap-shape                    31
+cap-surface              446904
+cap-color                    13
+does-bruise-or-bleed         10
+gill-attachment          349821
+gill-spacing             839595
+gill-color                   49
+stem-height                   1
+stem-root               1838012
+stem-surface            1321488
+stem-color                   21
+veil-type               1971545
+veil-color              1826124
+has-ring                     19
+ring-type                 86195
+spore-print-color       1899617
+habitat                      25
+dtype: int64
+
+Количество дубликатов: 0
+
+============================================================
+Информация о датасете: sample_submission.csv
+============================================================
+
+Размер датасета: 2077964 строк, 2 столбцов
+
+Типы данных:
+id        int64
+class    object
+dtype: object
+
+Первые 5 строк:
+        id class
+0  3116945     e
+1  3116946     e
+2  3116947     e
+3  3116948     e
+4  3116949     e
+
+Базовая статистика (describe):
+                  id    class
+count   2.077964e+06  2077964
+unique           NaN        1
+top              NaN        e
+freq             NaN  2077964
+mean    4.155926e+06      NaN
+std     5.998567e+05      NaN
+min     3.116945e+06      NaN
+25%     3.636436e+06      NaN
+50%     4.155926e+06      NaN
+75%     4.675417e+06      NaN
+max     5.194908e+06      NaN
+
+Информация о пропущенных значениях:
+Пропущенных значений не обнаружено
+
+Количество дубликатов: 0

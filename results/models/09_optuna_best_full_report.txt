@@ -1,0 +1,22 @@
+============================================================
+ОТЧЕТ О МОДЕЛИ ОПТИМИЗИРОВАННОЙ OPTUNA (ПОЛНЫЙ ДАТАСЕТ)
+============================================================
+
+Модель: RandomForestClassifier (Pipeline с SelectKBest)
+
+Параметры из Optuna:
+  - n_features: 80
+  - n_estimators: 150
+  - max_depth: 19
+  - min_samples_split: 4
+  - min_samples_leaf: 2
+  - max_features: sqrt
+
+Обучение:
+  - Полный train set использован для обучения
+  - Submission файл создан для test set
+
+Предобработка:
+  - Численные признаки: SimpleImputer (median) + RobustScaler
+  - Категориальные признаки: One-Hot Encoding
+  - Feature Selection: SelectKBest (k из Optuna)
